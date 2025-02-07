@@ -9,6 +9,17 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
-  
+  html{
+    background-color: #E8F4F8;
+
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
 
 `;
