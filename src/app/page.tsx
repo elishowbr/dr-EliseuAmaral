@@ -4,8 +4,9 @@ import { GlobalStyle } from "./styles/Global";
 
 export default function Home() {
   return (
-    <GlobalStyle>
+    <>
+      <GlobalStyle />
       <h1>Oiii</h1>
-    </GlobalStyle>
+    </>
   );
 }
