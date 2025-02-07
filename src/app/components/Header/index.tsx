@@ -5,10 +5,13 @@ import Logo from '@/../public/LogoHead.png';
 export function Header() {
   return (
       <Head className="container">
+
         <div className="logo">
           <Image src={Logo} alt="Logo" />
-          <h2>Dr. Eliseu Amaral</h2>
+          <div className="logoInfo">
+          <h1 id="titulo">Dr. Eliseu Amaral</h1>
           <p>CRO-CE 2354</p>
+          </div>
         </div>
 
         <nav>
@@ -18,6 +21,7 @@ export function Header() {
         </nav>
 
         <button>Fale Conosco</button>
+
       </Head>
   );
 }

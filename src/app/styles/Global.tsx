@@ -1,7 +1,7 @@
-import { createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
- 
+
   *{
     padding: 0;
     margin: 0;
@@ -12,14 +12,8 @@ export const GlobalStyle = createGlobalStyle`
   html,body{
     background-color: #E8F4F8;
     font-family: Poppins, sans-serif;
-    
-
   }
 
-  .container{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
 
   a{
     text-decoration: none;
@@ -38,5 +32,4 @@ export const GlobalStyle = createGlobalStyle`
   p{
     font-size: 1rem;
   }
-
 `;
