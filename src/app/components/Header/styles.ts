@@ -10,7 +10,6 @@ export const Head = styled.header`
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-
   & .logo {
     display: flex;
     align-items: center;
@@ -40,7 +39,7 @@ export const Head = styled.header`
   }
 
   & button {
-    background-color: #4a90e2;
+    background-color: ${props => props.theme['blue-400']};
     color: white;
     padding: 0.75rem 1.125rem;
 
@@ -49,9 +48,10 @@ export const Head = styled.header`
 
     font-size: 1.25rem;
     text-transform: uppercase;
+    cursor: pointer;
 
     &:hover {
-      background-color: rgb(57, 112, 173);
+      background-color: ${props => props.theme['blue-600']};
       transition: 0.2s;
     }
   }
