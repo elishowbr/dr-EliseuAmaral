@@ -15,14 +15,28 @@ export const Head = styled.header`
   }
 
   & .logoInfo {
-    #titulo {
+
+    & > h1 {
       font-size: 2.25rem;
+      transition: 0.3s ease-in-out;
+
+
+      &:hover {
+      color: #154277;
+    }
     }
 
     & p {
       text-align: end;
       line-height: 0;
+      transition: 0.3s ease-in-out;
+
+
+      &:hover {
+      color: #154277;
     }
+    }
+    
   }
 
   & nav {
