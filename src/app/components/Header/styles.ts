@@ -42,7 +42,7 @@ export const Head = styled.header`
   }
 
   & button {
-    background-color: #4a90e2;
+    background-color: ${props => props.theme['blue-400']};
     color: white;
     height: min-content;
     padding: 0.75rem 1rem;
@@ -51,10 +51,12 @@ export const Head = styled.header`
     font-size: 1.25rem;
     text-transform: uppercase;
     cursor: pointer;
+    cursor: pointer;
     transition: 0.3s ease-in-out; // Coloca a transition no próprio botão, a animação fica mais clean!
 
     &:hover {
-      background-color: #154277;
+      background-color: ${props => props.theme['blue-600']};
+      transition: 0.2s;
     }
   }
 `;
