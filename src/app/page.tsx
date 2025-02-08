@@ -4,7 +4,8 @@ import { ThemeProvider } from "styled-components";
 import { Header } from "./components/Header";
 import { GlobalStyle } from "./styles/Global";
 import { defaultTheme } from "./styles/theme/default";
-import { Especialidades } from "./components/Main";
+import { HeroSection } from "./components/Hero";
+// import { Especialidades } from "./components/Main";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <ThemeProvider theme={defaultTheme}>
         <GlobalStyle />
         <Header />
-        <Especialidades />
+        <HeroSection/>
       </ThemeProvider>
     </>
   );

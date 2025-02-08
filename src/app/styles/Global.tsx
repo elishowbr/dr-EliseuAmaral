@@ -32,4 +32,8 @@ export const GlobalStyle = createGlobalStyle`
   p{
     font-size: 1rem;
   }
+
+  ul{
+    list-style: none;
+  }
 `;
