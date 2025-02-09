@@ -31,10 +31,22 @@ export const Hero = styled.section`
     border-radius: 18px;
 
     // Dificuldade em ajustar o tamanho do container para condizer com o texto me ajuda @elishowbr : TODO
-    height: 95px;
+    height: 85px;
     width: 350px;
     align-items: center;
     position: relative;
+    padding: 0 1rem 0 4rem;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #154277;
+
+    }
+
+    & p {
+        color: white;
+        font-size: 1.1rem;
+    }
 
     & #circle {
     display: flex;
@@ -46,14 +58,8 @@ export const Hero = styled.section`
     align-items: center;
 
     position: absolute;
-    left: -35px;
+    left: -2.5rem;
   }
-
-    & p {
-        color: white;
-        font-size: 1.1rem;
-        margin: 0 1rem 0 4rem;
-    }
   }
 
   
