@@ -13,11 +13,13 @@ export function HeroSection() {
         <ul className="hero-items">
 
           <li className="hero-item">
+
             <div id="circle">
               <Image src={healthIcon} alt="#" width={60} height={60} />
             </div>
+
             <p>
-              Cuidado individualizado, com foco na confiança e no conforto do paciente.
+              Cuidado individualizado com foco na confiança e no conforto do paciente.
             </p>
           </li>
 
@@ -26,8 +28,7 @@ export function HeroSection() {
               <Image src={toolsIcon} alt="#" width={60} height={60} />
             </div>
             <p>
-              Equipamentos de ponta garantem precisão, conforto e segurança nos
-              tratamentos.
+              Equipamentos de ponta que garantem precisão, conforto e segurança no tratamento.
             </p>
           </li>
 
@@ -35,7 +36,7 @@ export function HeroSection() {
             <div id="circle">
               <Image src={handsIcon} alt="#" width={60} height={60} />
             </div>
-            <p>Padrões rigorosos de biossegurança para proteger sua saúde.</p>
+            <p>Padrões de biossegurança para proteger sua saúde.</p>
           </li>
 
         </ul>

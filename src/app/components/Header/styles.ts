@@ -20,7 +20,6 @@ export const Head = styled.header`
       font-size: 2.25rem;
       transition: 0.3s ease-in-out;
 
-
       &:hover {
       color: #154277;
     }
@@ -31,18 +30,20 @@ export const Head = styled.header`
       line-height: 0;
       transition: 0.3s ease-in-out;
 
-
       &:hover {
       color: #154277;
     }
     }
     
   }
+  & .headerInfo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 
-  & nav {
+    & nav {
     display: flex;
     gap: 3rem;
-    align-items: center;
     
     & a {
       font-size: 1.25rem;
@@ -52,25 +53,23 @@ export const Head = styled.header`
       color: #154277;
     }
   }
-
+  }
   }
 
   & button {
     background-color: ${props => props.theme['blue-400']};
     color: white;
-    height: min-content;
     padding: 0.75rem 1rem;
     border: 0;
     border-radius: 8px;
     font-size: 1.25rem;
     text-transform: uppercase;
     cursor: pointer;
-    cursor: pointer;
-    transition: 0.3s ease-in-out; // Coloca a transition no próprio botão, a animação fica mais clean!
+    transition: 0.3s ease-in-out;
 
     &:hover {
       background-color: ${props => props.theme['blue-600']};
-      transition: 0.2s;
+      transition: 0.3s;
     }
   }
 `;

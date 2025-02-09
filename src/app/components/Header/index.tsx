@@ -14,6 +14,8 @@ export function Header() {
           </div>
         </div>
 
+    <div className="headerInfo">
+
         <nav>
           <a href="">Especialidades</a>
           <a href="">Sobre</a>
@@ -21,6 +23,7 @@ export function Header() {
         </nav>
 
         <button>Fale Conosco</button>
+    </div>
 
       </Head>
   );
