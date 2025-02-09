@@ -18,7 +18,7 @@ export const Head = styled.header`
 
     & > h1 {
       font-size: 2.25rem;
-      transition: 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out;
 
 
       &:hover {
@@ -29,7 +29,7 @@ export const Head = styled.header`
     & p {
       text-align: end;
       line-height: 0;
-      transition: 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out;
 
 
       &:hover {
@@ -46,7 +46,7 @@ export const Head = styled.header`
     
     & a {
       font-size: 1.25rem;
-      transition: 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out;
 
     &:hover {
       color: #154277;
@@ -66,11 +66,10 @@ export const Head = styled.header`
     text-transform: uppercase;
     cursor: pointer;
     cursor: pointer;
-    transition: 0.3s ease-in-out; // Coloca a transition no próprio botão, a animação fica mais clean!
+    transition: background-color 0.2s;
 
     &:hover {
       background-color: ${props => props.theme['blue-600']};
-      transition: 0.2s;
     }
   }
 `;
