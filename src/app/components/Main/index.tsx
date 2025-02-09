@@ -1,7 +1,6 @@
 import { Main } from "./styles";
 import Image from "next/image";
 
-
 const especialidades = [
   { name: "Implantodontia", pathImg: "/images/especiaIcon1.png", alt: "Implantodontia" },
   {
@@ -18,28 +17,36 @@ const especialidades = [
 export function Especialidades() {
   return (
     <Main className="especialidades">
+      <h2>Especialidades e Serviços</h2>
       <section className="servicos">
-        <h2>Especialidades e Serviços</h2>
         <ul className="specialtys">
           {especialidades.map((item, index) => {
             return (
               <li key={index} className="specialtyitem" tabIndex={0}>
-            <Image src={item.pathImg} alt={item.alt} width={50} height={50} />
-            <h3>{item.name}</h3>
+                <Image src={item.pathImg} alt={item.alt} width={50} height={50} />
+                <h3>{item.name}</h3>
               </li>
             );
           })}
         </ul>
 
         <article className="card">
-          {/* <Image src={imagem} alt={descImagem}/> */}
-          <h2>Reabilitação Oral</h2>
-          <p>
-            A reabilitação oral é um conjunto de tratamentos odontológicos que visa
-            restaurar a saúde, a função e a estética do sorriso. Esse procedimento é
-            indicado para pacientes que apresentam perdas dentárias, desgastes severos,
-            problemas na mordida ou dificuldades na fala e mastigação.
-          </p>
+          <Image
+            src={"/images/ImgArticle.png"}
+            alt={"#"}
+            id="imgCard"
+            width={627}
+            height={294}
+          />
+          <div id="textCard">
+            <h2>Reabilitação Oral</h2>
+            <p>
+              A reabilitação oral é um conjunto de tratamentos odontológicos que visa
+              restaurar a saúde, a função e a estética do sorriso. Esse procedimento é
+              indicado para pacientes que apresentam perdas dentárias, desgastes severos,
+              problemas na mordida ou dificuldades na fala e mastigação.
+            </p>
+          </div>
         </article>
       </section>
     </Main>
