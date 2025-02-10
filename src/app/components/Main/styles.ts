@@ -1,13 +1,12 @@
 import { styled } from 'styled-components';
 
 export const Main = styled.main`
-  height: 666px;
   margin-inline: 120px;
-  margin-block: 3.5rem 2rem;
+  margin-block: 3.5rem 3rem;
 
   & h2 {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: bold;
     color: ${(props) => props.theme["blue-600"]};
 
     margin-bottom: 2rem;
@@ -16,27 +15,42 @@ export const Main = styled.main`
   & .servicos {
     display: flex;
     flex-direction: row;
-
+    gap: 100px;
     justify-content: space-between;
-
-    gap: 13rem;
   }
 
   & .card{
     background-color: white;
+    max-width: 40rem;
 
     border-radius: 10px;
 
     & #imgCard{
-      border-radius: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
       width: 100%;
+    }
+
+    & #textCard {
+      padding-inline: 1rem ;
+      padding-block: 0.2rem 1rem;
+
+      & #titleCard{
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: ${props => props.theme['blue-600']};
+        margin-bottom: 1rem;
+      }
+
+      & p {
+        
+      }
     }
   }
 
   & .specialtys {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 0;
     margin: 0;
 

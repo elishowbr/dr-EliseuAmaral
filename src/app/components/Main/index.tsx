@@ -24,7 +24,7 @@ export function Especialidades() {
             return (
               <li key={index} className="specialtyitem" tabIndex={0}>
                 <Image src={item.pathImg} alt={item.alt} width={50} height={50} />
-                <h3>{item.name}</h3>
+                <h4>{item.name}</h4>
               </li>
             );
           })}
@@ -39,7 +39,9 @@ export function Especialidades() {
             height={294}
           />
           <div id="textCard">
-            <h2>Reabilitação Oral</h2>
+            {/* TODO: Fazer a feat de que quando clickar em 
+            uma especialidade, Trocar as informaçoes do Card */}
+            <h3 id="titleCard">Reabilitação Oral</h3>
             <p>
               A reabilitação oral é um conjunto de tratamentos odontológicos que visa
               restaurar a saúde, a função e a estética do sorriso. Esse procedimento é
