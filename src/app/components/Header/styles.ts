@@ -3,10 +3,10 @@ import { styled } from 'styled-components'
 export const Head = styled.header`
   display: flex;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 1.25rem 4rem;
   justify-content: space-between;
   user-select: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -3px 5px 0px rgba(0,0,0, 0.3) inset;
 
   & .logo {
     display: flex;
