@@ -3,17 +3,17 @@ import { styled } from "styled-components";
 
 export const Hero = styled.section`
   height: 600px;
-  width: auto;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   user-select: none;
 
-  padding: 2rem 3.75rem;
+  padding: 1.5rem 4rem;
   background-image: url("images/mainimg.png");
   background-size: cover;
 
   && h1 {
+    margin-left: 2rem;
     width: 696px;
     font-size: 2.5rem;
     color: #fff;
@@ -21,7 +21,7 @@ export const Hero = styled.section`
 
   & .hero-items {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 5rem;
   }
 

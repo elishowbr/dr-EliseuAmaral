@@ -3,11 +3,7 @@ import Image from "next/image";
 
 const especialidades = [
   { name: "Implantodontia", pathImg: "/images/especiaIcon1.png", alt: "Implantodontia" },
-  {
-    name: "Reabilitação Oral",
-    pathImg: "/images/especiaIcon2.png",
-    alt: "Reabilitação Oral",
-  },
+  { name: "Reabilitação Oral", pathImg: "/images/especiaIcon2.png", alt: "Reabilitação Oral" },
   { name: "Próteses", pathImg: "/images/especiaIcon3.png", alt: "Próteses" },
   { name: "Cirurgias", pathImg: "/images/especiaIcon4.png", alt: "Cirurgias" },
   { name: "Endodontia", pathImg: "/images/especiaIcon5.png", alt: "Endodontia" },
@@ -16,7 +12,7 @@ const especialidades = [
 
 export function Especialidades() {
   return (
-    <Main className="especialidades">
+    <Main className="especialidades" id="especialidades">
       <h2>Especialidades e Serviços</h2>
       <section className="servicos">
         <ul className="specialtys">

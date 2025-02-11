@@ -8,8 +8,8 @@ export const Main = styled.main`
     font-size: 2.5rem;
     font-weight: bold;
     color: ${(props) => props.theme["blue-600"]};
-
     margin-bottom: 2rem;
+    letter-spacing: 1px;
   }
 
   & .servicos {
@@ -20,8 +20,9 @@ export const Main = styled.main`
   }
 
   & .card{
-    background-color: white;
+    background-color:rgb(224, 224, 224);
     max-width: 40rem;
+    box-shadow: 0 0 0 2px rgba(0,0,0, 0.3);
 
     border-radius: 10px;
 
@@ -39,11 +40,11 @@ export const Main = styled.main`
         font-size: 1.75rem;
         font-weight: bold;
         color: ${props => props.theme['blue-600']};
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
       }
 
       & p {
-        
+        line-height: 1.4;
       }
     }
   }
@@ -53,32 +54,34 @@ export const Main = styled.main`
     flex-direction: column;
     padding: 0;
     margin: 0;
-
-    gap: 13px;
+    gap: 14px;
+    user-select: none;
 
     & .specialtyitem {
       list-style: none;
       width: 25rem;
-
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 12px;
       padding: 0.5rem 1rem;
-
       border-radius: 8px;
-      border: 1px solid ${(props) => props.theme["blue-600"]};
-
       background-color: ${(props) => props.theme.white};
-      transition: background-color 0.2s, color 0.2s, border 0.2s;
+      border: 1px solid ${(props) => props.theme["blue-600"]};
+      transition: background-color 0.2s, color 0.2s, outline 0.05s ease-in-out;
 
+      & h4 {
+        font-weight: 600;
+      }
+      
       &:focus {
         box-shadow: 0 0 0 2px ${(props) => props.theme["blue-400"]};
+        background-color: ${(props) => props.theme["blue-600"]};
+        color: ${(props) => props.theme.white};
       }
 
       &:hover {
-        background-color: ${(props) => props.theme["blue-600"]};
-        color: ${(props) => props.theme.white};
+        outline: 2px solid ${props => props.theme["blue-600"]};
         cursor: pointer;
       }
     }

@@ -3,7 +3,7 @@ import { styled } from 'styled-components'
 export const Head = styled.header`
   display: flex;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   justify-content: space-between;
   user-select: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -47,6 +47,9 @@ export const Head = styled.header`
     display: flex;
     gap: 3rem;
     
+    &:focus {
+      border-radius: 2px;
+    }
     & a {
       font-size: 1.25rem;
       transition: color 0.3s ease-in-out;
@@ -56,23 +59,22 @@ export const Head = styled.header`
     }
   }
   }
-  }
 
   & button {
     background-color: ${props => props.theme['blue-400']};
     color: white;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     border: 0;
     border-radius: 8px;
     font-size: 1.25rem;
     text-transform: uppercase;
-    cursor: pointer;
     cursor: pointer;
     transition: background-color 0.2s;
 
     &:hover {
       background-color: ${props => props.theme['blue-600']};
     }
+  }
   }
 `;
 

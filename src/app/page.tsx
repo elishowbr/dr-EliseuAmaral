@@ -7,7 +7,7 @@ import { defaultTheme } from "./styles/theme/default";
 import { HeroSection } from "./components/Hero";
 import { Especialidades } from "./components/Main";
 import { About } from "./components/About";
-// import { Especialidades } from "./components/Main";
+import { Rodape } from "./components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
         <HeroSection/>
         <Especialidades/>
         <About/>
+        <Rodape />
       </ThemeProvider>
     </>
   );

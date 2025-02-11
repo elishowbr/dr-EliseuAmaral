@@ -4,7 +4,7 @@ import Logo from '@/../public/LogoHead.png';
 
 export function Header() {
   return (
-      <Head className="container">
+      <Head>
 
         <div className="logo">
           <Image src={Logo} alt="Logo" />
@@ -17,8 +17,8 @@ export function Header() {
     <div className="headerInfo">
 
         <nav>
-          <a href="">Especialidades</a>
-          <a href="">Sobre</a>
+          <a href="#especialidades">Especialidades</a>
+          <a href="#sobre">Sobre</a>
           <a href="">Contato</a>
         </nav>
 
