@@ -13,7 +13,7 @@ export function About() {
       ></Image>
 
       <div id="containerAbout">
-        <h2>Sobre mim</h2>
+        <h2 id="aboutTitle">Sobre mim</h2>
         <p>
           Luci Ipsumis simply dummy text of the printing and typesetting industry. Lorem
           Ipsum has been the industrys standard dummy text ever since the 1500s, when an

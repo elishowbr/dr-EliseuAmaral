@@ -12,7 +12,7 @@ export const Hero = styled.section`
   background-image: url("images/mainimg.png");
   background-size: cover;
 
-  && h1 {
+  & h1 {
     margin-left: 2rem;
     width: 696px;
     font-size: 2.5rem;
@@ -22,7 +22,7 @@ export const Hero = styled.section`
   & .hero-items {
     display: flex;
     justify-content: space-between;
-    padding: 0 8rem;
+    padding: 0 4rem;
   }
 
   & .hero-item {
@@ -59,6 +59,27 @@ export const Hero = styled.section`
     position: absolute;
     left: -2.5rem;
   }
+  }
+
+  @media (max-width: 1280px) {
+
+    & h1 {
+      margin: 0 !important;
+    }
+
+    & .hero-items {
+      margin: 0;
+      padding: 0;
+      justify-content: space-around;
+
+      & .hero-item {
+        max-width: 20rem;
+
+       & p {
+        font-size: 1rem;
+       }
+      }
+      }
   }
 
   @media (max-width: 1920px) {

@@ -31,11 +31,27 @@ export const AboutMe = styled.section`
  @media (max-width: 1920px) {
 
  #containerAbout {
-  margin-right: 8rem;
+  margin-left: 0rem;
 }
 
 #imgProfile {
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 }
+
+@media (max-width: 1280px) {
+  
+  #containerAbout {
+  max-width: 30rem;
+
+  & h2 {
+    margin-bottom: 0px;
+  }
+}
+
+#imgProfile {
+  width: 24rem;
+  margin-left: 0rem;
+}
+  }
 `;

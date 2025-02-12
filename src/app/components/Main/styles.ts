@@ -14,14 +14,12 @@ export const Main = styled.main`
 
   & .servicos {
     display: flex;
-    flex-direction: row;
-    gap: 100px;
     justify-content: space-between;
   }
 
   & .card{
     background-color:rgb(224, 224, 224);
-    max-width: 40rem;
+    max-width: 38rem;
     box-shadow: 0 0 0 2px rgba(0,0,0, 0.3);
 
     border-radius: 10px;
@@ -52,14 +50,12 @@ export const Main = styled.main`
   & .specialtys {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
-    gap: 14px;
+    justify-content: space-between;
     user-select: none;
 
     & .specialtyitem {
       list-style: none;
-      width: 25rem;
+      width: 24rem;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -69,7 +65,7 @@ export const Main = styled.main`
       background-color: ${(props) => props.theme.white};
       border: 1px solid ${(props) => props.theme["blue-600"]};
       transition: background-color 0.2s, color 0.2s, outline 0.05s ease-in-out, margin 0.3s;
-
+      
       & h4 {
         font-weight: 600;
       }
@@ -78,7 +74,7 @@ export const Main = styled.main`
         box-shadow: 0 0 0 2px ${(props) => props.theme["blue-400"]};
         background-color: ${(props) => props.theme["blue-600"]};
         color: ${(props) => props.theme.white};
-        margin-left: 2.5rem;
+        margin-left: 2rem;
       }
 
       &:hover {
@@ -89,14 +85,21 @@ export const Main = styled.main`
   }
 
 
+
 @media (max-width: 1920px) {
-
-  h2, .servicos {
-    margin-left: 4rem;
-  }
-
   .card {
-    margin-right: 8rem;
+    max-width: 30rem;
   }
+}
+
+@media (max-width: 1280px) {
+
+&& h2, .servicos {
+  margin-left: 0.5rem;
+}
+
+.card {
+  margin-left: 6rem;
+}
 }
 `;

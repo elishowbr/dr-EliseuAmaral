@@ -86,5 +86,15 @@ export const Head = styled.header`
       margin-right: 4rem;
     }
   }
+
+  @media (max-width: 1280px) {
+    .logo {
+      margin: 0;
+    }
+
+    .headerInfo {
+      margin: 0;
+    }
+  }
 `;
 
