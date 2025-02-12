@@ -21,8 +21,8 @@ export const Hero = styled.section`
 
   & .hero-items {
     display: flex;
-    justify-content: space-between;
-    padding: 0 4rem;
+    justify-content: space-around;
+    padding: 0 2rem;
   }
 
   & .hero-item {

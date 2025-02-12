@@ -60,7 +60,7 @@ export const Head = styled.header`
   }
   }
 
-  & button {
+  & #wppContact {
     background-color: ${props => props.theme['blue-400']};
     color: white;
     padding: 0.5rem 1rem;

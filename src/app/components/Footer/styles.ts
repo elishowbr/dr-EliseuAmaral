@@ -15,10 +15,13 @@ box-shadow: 0px -5px 3px rgba(0,0,0,0.2);
             flex-direction: column;
             gap: 2px;
 
-
             & h3 {
                 color: ${(props) => props.theme["blue-600"]};
                 font-weight: 600;
+            }
+            
+            & a:hover {
+                text-decoration: underline;
             }
         }
     }
