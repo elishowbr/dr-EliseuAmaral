@@ -87,19 +87,28 @@ export const Main = styled.main`
 
 
 @media (max-width: 1920px) {
+
+h2, .servicos {
+  margin-left: 2rem;
+  
+  & .specialtyitem {
+    width: 25rem;
+  }
+}
+
   .card {
-    max-width: 30rem;
+    max-width: 38rem;
   }
 }
 
 @media (max-width: 1280px) {
 
-&& h2, .servicos {
+h2, .servicos {
   margin-left: 0.5rem;
+  
 }
-
 .card {
-  margin-left: 6rem;
-}
+    max-width: 30rem;
+  }
 }
 `;
