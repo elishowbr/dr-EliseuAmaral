@@ -8,6 +8,7 @@ import { HeroSection } from "./components/Hero";
 import { Especialidades } from "./components/Main";
 import { About } from "./components/About";
 import { Rodape } from "./components/Footer";
+import { Contact } from "./components/Contact";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <HeroSection/>
         <Especialidades/>
         <About/>
+        <Contact/>
         <Rodape />
       </ThemeProvider>
     </>
