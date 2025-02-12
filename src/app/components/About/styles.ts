@@ -26,4 +26,16 @@ export const AboutMe = styled.section`
       line-height: 1.5;
     }
   }
+
+
+ @media (max-width: 1920px) {
+
+ #containerAbout {
+  margin-right: 8rem;
+}
+
+#imgProfile {
+  margin-left: 4rem;
+}
+}
 `;

@@ -47,4 +47,5 @@ export const GlobalStyle = createGlobalStyle`
   footer {
     background-color: #D2DDE3;
   }
+
 `;

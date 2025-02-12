@@ -6,7 +6,7 @@ import handsIcon from "@/../public/CleanerHands.svg";
 
 export function HeroSection() {
   return (
-    <Hero className="container">
+    <Hero>
         
         <h1>Agende sua consulta hoje mesmo e transforme seu sorriso!</h1>
 
@@ -40,6 +40,7 @@ export function HeroSection() {
           </li>
 
         </ul>
+        
     </Hero>
   );
 }

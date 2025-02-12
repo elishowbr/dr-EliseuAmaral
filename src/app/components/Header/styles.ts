@@ -69,12 +69,22 @@ export const Head = styled.header`
     font-size: 1.25rem;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, transform 0.2s;
 
     &:hover {
       background-color: ${props => props.theme['blue-600']};
     }
   }
+  }
+
+  @media (max-width: 1920px) {
+    .logo {
+      margin-left: 4rem;
+    }
+
+    .headerInfo {
+      margin-right: 4rem;
+    }
   }
 `;
 

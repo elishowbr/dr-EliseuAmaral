@@ -21,8 +21,8 @@ export const Hero = styled.section`
 
   & .hero-items {
     display: flex;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-between;
+    padding: 0 8rem;
   }
 
   & .hero-item {
@@ -61,5 +61,9 @@ export const Hero = styled.section`
   }
   }
 
-  
+  @media (max-width: 1920px) {
+    && h1 {
+      margin-left: 4rem;
+    }
+  }
 `;

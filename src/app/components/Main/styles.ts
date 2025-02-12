@@ -68,7 +68,7 @@ export const Main = styled.main`
       border-radius: 8px;
       background-color: ${(props) => props.theme.white};
       border: 1px solid ${(props) => props.theme["blue-600"]};
-      transition: background-color 0.2s, color 0.2s, outline 0.05s ease-in-out;
+      transition: background-color 0.2s, color 0.2s, outline 0.05s ease-in-out, margin 0.3s;
 
       & h4 {
         font-weight: 600;
@@ -78,6 +78,7 @@ export const Main = styled.main`
         box-shadow: 0 0 0 2px ${(props) => props.theme["blue-400"]};
         background-color: ${(props) => props.theme["blue-600"]};
         color: ${(props) => props.theme.white};
+        margin-left: 2.5rem;
       }
 
       &:hover {
@@ -86,4 +87,16 @@ export const Main = styled.main`
       }
     }
   }
+
+
+@media (max-width: 1920px) {
+
+  h2, .servicos {
+    margin-left: 4rem;
+  }
+
+  .card {
+    margin-right: 8rem;
+  }
+}
 `;
