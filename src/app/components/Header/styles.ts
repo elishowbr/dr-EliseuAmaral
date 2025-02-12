@@ -3,10 +3,10 @@ import { styled } from 'styled-components'
 export const Head = styled.header`
   display: flex;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1.25rem 4rem;
   justify-content: space-between;
   user-select: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -3px 5px 0px rgba(0,0,0, 0.3) inset;
 
   & .logo {
     display: flex;
@@ -18,7 +18,8 @@ export const Head = styled.header`
 
     & > h1 {
       font-size: 2.25rem;
-      transition: 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out;
+
 
       &:hover {
       color: #154277;
@@ -28,7 +29,8 @@ export const Head = styled.header`
     & p {
       text-align: end;
       line-height: 0;
-      transition: 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out;
+
 
       &:hover {
       color: #154277;
@@ -45,32 +47,34 @@ export const Head = styled.header`
     display: flex;
     gap: 3rem;
     
+    &:focus {
+      border-radius: 2px;
+    }
     & a {
       font-size: 1.25rem;
-      transition: 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out;
 
     &:hover {
       color: #154277;
     }
   }
   }
-  }
 
   & button {
     background-color: ${props => props.theme['blue-400']};
     color: white;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     border: 0;
     border-radius: 8px;
     font-size: 1.25rem;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: background-color 0.2s;
 
     &:hover {
       background-color: ${props => props.theme['blue-600']};
-      transition: 0.3s;
     }
+  }
   }
 `;
 

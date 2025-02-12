@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
   }
 
   html,body{
@@ -35,5 +36,15 @@ export const GlobalStyle = createGlobalStyle`
 
   ul{
     list-style: none;
+  }
+
+  :focus{
+    outline: 0;
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px  ${(props) => props.theme["blue-600"]};
+  }
+
+  footer {
+    background-color: #D2DDE3;
   }
 `;
