@@ -34,8 +34,8 @@ export const Head = styled.header`
       color: #154277;
     }
     }
-    
   }
+  
   & .headerInfo {
     display: flex;
     align-items: center;

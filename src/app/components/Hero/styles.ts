@@ -40,7 +40,6 @@ export const Hero = styled.section`
 
     &:hover {
       background-color: #154277;
-
     }
 
     & p {
@@ -50,12 +49,12 @@ export const Hero = styled.section`
 
     & #circle {
     display: flex;
-    background-color: #fff;
     width: 95px;
     height: 95px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 
     position: absolute;
     left: -2.5rem;
