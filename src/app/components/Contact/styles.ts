@@ -1,10 +1,15 @@
+import { defaultTheme } from '@/app/styles/theme/default';
 import { styled } from 'styled-components'
 
 export const ContactSection = styled.section` 
-    margin: 1rem 7.5rem 3.75rem;
+    margin: 1rem 8rem 4rem 8rem;
+
+    & section + footer {
+        margin-top: 25rem !important;
+    }
 
     & h2 {
-        color: ${props => props.theme['blue-600']};
+        color: ${defaultTheme.blue_600};
     }
 
     & #contact-container {
@@ -14,22 +19,26 @@ export const ContactSection = styled.section`
 
         padding: 1rem;
 
-        background-color: ${props => props.theme['blue-400']};
+        background-color: ${defaultTheme.blue_400};
         border-radius: 8px;
 
         & ul {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 12px;
+            gap: 0.75rem;
 
-            & li,a {
+            & li {
                 display: flex;
-                gap: 12px;
-                color: white;
-
+                gap: 0.75rem;
+                
                 & a {
-                    text-decoration: underline;
+                    color: white;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: white;
+                    }
                 }
             }
         }

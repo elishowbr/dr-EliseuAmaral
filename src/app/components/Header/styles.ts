@@ -1,3 +1,4 @@
+import { defaultTheme } from '@/app/styles/theme/default';
 import { styled } from 'styled-components'
 
 export const Head = styled.header`
@@ -22,7 +23,7 @@ export const Head = styled.header`
 
 
       &:hover {
-      color: #154277;
+      color: ${defaultTheme.blue_600};
     }
     }
 
@@ -33,7 +34,7 @@ export const Head = styled.header`
 
 
       &:hover {
-      color: #154277;
+      color: #${defaultTheme.blue_600};
     }
     }
   }
@@ -52,16 +53,22 @@ export const Head = styled.header`
     }
     & a {
       font-size: 1.25rem;
-      transition: color 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+      padding: 0.3rem 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #E8F4F8;
+
+
 
     &:hover {
-      color: #154277;
+      color: ${defaultTheme.blue_600};
+      border: 1px solid ${defaultTheme.blue_600};
     }
   }
   }
 
   & #wppContact {
-    background-color: ${props => props.theme['blue-400']};
+    background-color: ${defaultTheme.blue_400};
     color: white;
     padding: 0.5rem 1rem;
     border: 0;
@@ -72,7 +79,7 @@ export const Head = styled.header`
     transition: background-color 0.2s, transform 0.2s;
 
     &:hover {
-      background-color: ${props => props.theme['blue-600']};
+      background-color: ${defaultTheme.blue_600};
     }
   }
   }

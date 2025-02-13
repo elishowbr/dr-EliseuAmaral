@@ -1,3 +1,4 @@
+import { defaultTheme } from '@/app/styles/theme/default';
 import { styled } from 'styled-components';
 
 export const Main = styled.main`
@@ -7,7 +8,7 @@ export const Main = styled.main`
   & h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: ${(props) => props.theme["blue-600"]};
+    color: ${defaultTheme.blue_600};
     margin-bottom: 2rem;
     letter-spacing: 1px;
   }
@@ -38,7 +39,7 @@ export const Main = styled.main`
       & #titleCard {
         font-size: 1.75rem;
         font-weight: bold;
-        color: ${(props) => props.theme["blue-600"]};
+        color: ${defaultTheme.blue_600};
         margin-bottom: 0.5rem;
       }
 
@@ -63,8 +64,8 @@ export const Main = styled.main`
       gap: 12px;
       padding: 0.5rem 1rem;
       border-radius: 8px;
-      background-color: ${(props) => props.theme.white};
-      border: 1px solid ${(props) => props.theme["blue-600"]};
+      background-color: ${defaultTheme.white};
+      border: 1px solid ${defaultTheme.blue_600};
       transition: background-color 0.2s, color 0.2s, outline 0.05s ease-in-out,
         margin 0.3s;
 
@@ -73,14 +74,14 @@ export const Main = styled.main`
       }
 
       &:focus {
-        box-shadow: 0 0 0 2px ${(props) => props.theme["blue-400"]};
-        background-color: ${(props) => props.theme["blue-600"]};
-        color: ${(props) => props.theme.white};
+        box-shadow: 0 0 0 2px ${defaultTheme.blue_400};
+        background-color: ${defaultTheme.blue_600};
+        color: ${defaultTheme.white};
         margin-left: 2rem;
       }
 
       &:hover {
-        outline: 2px solid ${(props) => props.theme["blue-600"]};
+        outline: 2px solid ${defaultTheme.blue_600};
         cursor: pointer;
       }
     }

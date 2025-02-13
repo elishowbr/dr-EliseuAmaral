@@ -1,3 +1,4 @@
+import { defaultTheme } from '@/app/styles/theme/default';
 import styled from 'styled-components'
 
 export const AboutMe = styled.section`
@@ -17,7 +18,7 @@ export const AboutMe = styled.section`
     max-width: 615px;
 
     & h2{
-    color: ${props => props.theme['blue-600']};
+    color: ${defaultTheme.blue_600};
     letter-spacing: 1px;
     margin-bottom: 26px;
   }
@@ -51,7 +52,7 @@ export const AboutMe = styled.section`
 
 #imgProfile {
   width: 24rem;
-  margin-left: 0rem;
+  margin-left: 0rem;  
 }
   }
 `;

@@ -1,3 +1,4 @@
+import { defaultTheme } from "@/app/styles/theme/default";
 import { styled } from "styled-components";
 
 
@@ -9,14 +10,14 @@ export const Hero = styled.section`
   user-select: none;
 
   padding: 1.5rem 4rem;
-  background-image: url("images/mainimg.png");
+  background-image: url("images/foto.jpg");
   background-size: cover;
 
   & h1 {
     margin-left: 2rem;
     width: 696px;
     font-size: 2.5rem;
-    color: #fff;
+    color: ${defaultTheme.blue_600}
   }
 
   & .hero-items {
@@ -39,7 +40,7 @@ export const Hero = styled.section`
     transition: 0.3s ease-in-out;
 
     &:hover {
-      background-color: #154277;
+      background-color: ${defaultTheme.blue_600};
     }
 
     & p {
@@ -54,7 +55,7 @@ export const Hero = styled.section`
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: ${defaultTheme.white};
 
     position: absolute;
     left: -2.5rem;

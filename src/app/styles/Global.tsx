@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { defaultTheme } from './theme/default';
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -41,7 +42,7 @@ export const GlobalStyle = createGlobalStyle`
   :focus{
     outline: 0;
     border-radius: 2px;
-    box-shadow: 0 0 0 2px  ${(props) => props.theme["blue-600"]};
+    box-shadow: 0 0 0 2px  ${defaultTheme.blue_600};
   }
 
   footer {

@@ -9,7 +9,7 @@ export function Contact() {
         <ul>
           <li>
             <Image src={"/icons/compass.svg"} alt="" width={25} height={25} />
-            <p>Rua Cruzeiro do Sul, n° 321, Carlito Pamplona, Fortaleza</p>
+            <a target="_blank" href="https://www.google.com/maps?ll=-3.713843,-38.560541&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&q=R.+Cruzeiro+do+Sul,+321+-+Álvaro+Weyne+Fortaleza+-+CE+60335-190">Rua Cruzeiro do Sul, n° 321, Carlito Pamplona, Fortaleza</a>
           </li>
           <li>
             <Image src={"/icons/email.svg"} alt="" width={25} height={25} />

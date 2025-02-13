@@ -22,7 +22,7 @@ export function Header() {
           <a href="">Contato</a>
         </nav>
 
-        <a id="wppContact" target="_" href="https://wa.me/85988994048?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação!">Fale conosco</a>
+        <a id="wppContact" target="_blank" href="https://wa.me/85988994048?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação!">Fale conosco</a>
     </div>
 
       </Head>

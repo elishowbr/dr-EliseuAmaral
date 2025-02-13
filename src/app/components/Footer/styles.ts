@@ -1,3 +1,4 @@
+import { defaultTheme } from "@/app/styles/theme/default";
 import styled from "styled-components";
 
 export const Footer = styled.footer`
@@ -16,7 +17,7 @@ box-shadow: 0px -5px 3px rgba(0,0,0,0.2);
             gap: 2px;
 
             & h3 {
-                color: ${(props) => props.theme["blue-600"]};
+                color: ${defaultTheme.blue_600};
                 font-weight: 600;
             }
             
