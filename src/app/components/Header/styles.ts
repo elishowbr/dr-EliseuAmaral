@@ -1,5 +1,5 @@
-import { defaultTheme } from '@/app/styles/theme/default';
-import { styled } from 'styled-components'
+import { defaultTheme } from "@/app/styles/theme/default";
+import { styled } from "styled-components";
 
 export const Head = styled.header`
   display: flex;
@@ -7,7 +7,7 @@ export const Head = styled.header`
   padding: 1.25rem 4rem;
   justify-content: space-between;
   user-select: none;
-  box-shadow: 0px -3px 5px 0px rgba(0,0,0, 0.3) inset;
+  box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.3) inset;
 
   & .logo {
     display: flex;
@@ -16,15 +16,13 @@ export const Head = styled.header`
   }
 
   & .logoInfo {
-
     & > h1 {
       font-size: 2.25rem;
       transition: color 0.3s ease-in-out;
 
-
       &:hover {
-      color: ${defaultTheme.blue_600};
-    }
+        color: ${defaultTheme.blue_600};
+      }
     }
 
     & p {
@@ -32,56 +30,54 @@ export const Head = styled.header`
       line-height: 0;
       transition: color 0.3s ease-in-out;
 
-
       &:hover {
-      color: #${defaultTheme.blue_600};
-    }
+        color: ${defaultTheme.blue_600};
+      }
     }
   }
-  
+
   & .headerInfo {
     display: flex;
     align-items: center;
     gap: 2rem;
 
     & nav {
-    display: flex;
-    gap: 3rem;
-    
-    &:focus {
-      border-radius: 2px;
+      display: flex;
+      gap: 1rem;
+
+      &:focus {
+        border-radius: 2px;
+      }
+
+      & a {
+        font-size: 1.25rem;
+        transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+        padding: 0.3rem 0.5rem;
+        border-radius: 8px;
+        border: 1px solid ${defaultTheme.white_200};
+
+        &:hover {
+          color: ${defaultTheme.blue_600};
+          border: 1px solid ${defaultTheme.blue_600};
+        }
+      }
     }
-    & a {
-      font-size: 1.25rem;
-      transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
-      padding: 0.3rem 0.5rem;
+
+    & #wppContact {
+      background-color: ${defaultTheme.blue_400};
+      color: white;
+      padding: 0.5rem 1rem;
+      border: 0;
       border-radius: 8px;
-      border: 1px solid #E8F4F8;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.2s;
 
-
-
-    &:hover {
-      color: ${defaultTheme.blue_600};
-      border: 1px solid ${defaultTheme.blue_600};
+      &:hover {
+        background-color: ${defaultTheme.blue_600};
+      }
     }
-  }
-  }
-
-  & #wppContact {
-    background-color: ${defaultTheme.blue_400};
-    color: white;
-    padding: 0.5rem 1rem;
-    border: 0;
-    border-radius: 8px;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-
-    &:hover {
-      background-color: ${defaultTheme.blue_600};
-    }
-  }
   }
 
   @media (max-width: 1920px) {
@@ -104,4 +100,3 @@ export const Head = styled.header`
     }
   }
 `;
-
