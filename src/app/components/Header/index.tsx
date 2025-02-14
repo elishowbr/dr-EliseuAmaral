@@ -19,7 +19,7 @@ export function Header() {
         <nav>
           <a href="#especialidades">Especialidades</a>
           <a href="#sobre">Sobre</a>
-          <a href="">Contato</a>
+          <a href="#contact">Contato</a>
         </nav>
 
         <a id="wppContact" target="_blank" href="https://wa.me/85988994048?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação!">Fale conosco</a>

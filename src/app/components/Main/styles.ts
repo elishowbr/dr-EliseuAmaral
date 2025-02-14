@@ -20,9 +20,9 @@ export const Main = styled.main`
   }
 
   & .card {
-    background-color: rgb(224, 224, 224);
+    background-color: ${defaultTheme.white};
     max-width: 38rem;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 
     & #imgCard {

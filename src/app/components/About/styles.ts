@@ -11,7 +11,7 @@ export const AboutMe = styled.section`
   & #imgProfile {
     border-radius: 8px;
     object-fit: cover;
-    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   }
 
   & #containerAbout {
