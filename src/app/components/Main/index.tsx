@@ -57,7 +57,6 @@ export function Especialidades() {
 
         <ul className="specialtys">
           {especialidades.map((item, index) => {
-            console.log(item);
             return (
               <li
                 key={index}
