@@ -27,4 +27,35 @@ box-shadow: 0px 5px 3px rgba(0,0,0,0.2) inset;
             }
         }
     }
+
+    /* Smartphones médios e grandes */
+@media (min-width: 375px) and (max-width: 768px){
+    padding: 0;
+    margin: 0;
+
+    & ul {
+        padding: 0;
+        gap: 0;
+    }
+}
+/* Tablets e smartphones no modo paisagem */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+    &{
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    &{
+        padding-inline: 6rem;
+    }
+
+}
 `

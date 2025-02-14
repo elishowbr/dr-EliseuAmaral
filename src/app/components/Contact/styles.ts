@@ -39,16 +39,24 @@ export const ContactSection = styled.section`
 
         & .contact-map {
             border-radius: 8px;
-            width: 50%;
-            height: 25rem;
+            width: 100%;
+            max-width: 33rem;
+            /* height: 25rem; */
         }
     }
 
 /* Smartphones médios e grandes */
-@media (min-width: 375px) {
-
+@media (min-width: 375px) and (max-width: 768px){
+    margin: 1rem 1rem 6rem;
+    & #contact-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    & .contact-map{
+        aspect-ratio: 1;
+    }
 }
-
 /* Tablets e smartphones no modo paisagem */
 @media (min-width: 768px) {
 

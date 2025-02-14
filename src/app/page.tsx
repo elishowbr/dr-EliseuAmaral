@@ -15,10 +15,10 @@ export default function Home() {
     <>
       <ThemeProvider theme={defaultTheme}>
         <GlobalStyle />
-        <Header />
-        <HeroSection/>
-        <Especialidades/>
-        <About/>
+        {/* <Header /> */}
+        {/* <HeroSection/> */}
+        {/* <Especialidades/> */}
+        {/* <About/> */}
         <Contact/>
         <Rodape />
       </ThemeProvider>
