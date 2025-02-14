@@ -2,7 +2,7 @@ import { defaultTheme } from '@/app/styles/theme/default';
 import { styled } from 'styled-components';
 
 export const Main = styled.main`
-  margin-inline: 120px;
+  margin-inline: 6rem;
   margin-block: 3.5rem 3rem;
 
   & h2 {
@@ -23,7 +23,6 @@ export const Main = styled.main`
     background-color: rgb(224, 224, 224);
     max-width: 38rem;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
-
     border-radius: 10px;
 
     & #imgCard {
@@ -51,23 +50,21 @@ export const Main = styled.main`
 
   & .specialtys {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: space-between;
     user-select: none;
 
     & .specialtyitem {
       list-style: none;
-      width: 24rem;
       display: flex;
-      flex-direction: row;
       align-items: center;
+      width: 24rem;
       gap: 12px;
       padding: 0.5rem 1rem;
       border-radius: 8px;
       background-color: ${defaultTheme.white};
       border: 1px solid ${defaultTheme.blue_600};
-      transition: background-color 0.2s, color 0.2s, outline 0.05s ease-in-out,
-        margin 0.3s;
+      transition: background-color 0.2s, color 0.2s, outline 0.05s ease-in-out, margin 0.3s;
 
       & h4 {
         font-weight: 600;
@@ -88,9 +85,9 @@ export const Main = styled.main`
   }
 
   @media (max-width: 1920px) {
-    h2,
-    .servicos {
-      margin-left: 2rem;
+
+    h2, .servicos {
+      margin-left: 6rem;
 
       & .specialtyitem {
         width: 25rem;
@@ -99,16 +96,19 @@ export const Main = styled.main`
 
     .card {
       max-width: 38rem;
+      margin-right: 6rem;
     }
   }
 
   @media (max-width: 1280px) {
-    h2,
-    .servicos {
+
+    h2, .servicos {
       margin-left: 0.5rem;
     }
+
     .card {
       max-width: 30rem;
+      margin-right: 3rem;
     }
   }
 `;

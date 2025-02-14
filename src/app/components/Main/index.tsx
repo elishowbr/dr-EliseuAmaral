@@ -51,9 +51,10 @@ export function Especialidades() {
   const [select, setSelect] = useState(especialidades[0]);
 
   return (
-    <Main className="especialidades" id="especialidades">
+    <Main>
       <h2>Especialidades e Serviços</h2>
       <section className="servicos">
+
         <ul className="specialtys">
           {especialidades.map((item, index) => {
             console.log(item);

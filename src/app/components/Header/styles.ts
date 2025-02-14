@@ -7,7 +7,6 @@ export const Head = styled.header`
   padding: 1.25rem 4rem;
   justify-content: space-between;
   user-select: none;
-  box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.3) inset;
 
   & .logo {
     display: flex;

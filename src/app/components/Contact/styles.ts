@@ -2,11 +2,7 @@ import { defaultTheme } from '@/app/styles/theme/default';
 import { styled } from 'styled-components'
 
 export const ContactSection = styled.section` 
-    margin: 1rem 8rem 4rem 8rem;
-
-    & section + footer {
-        margin-top: 25rem !important;
-    }
+    margin: 1rem 6rem 4rem 6rem;
 
     & h2 {
         color: ${defaultTheme.blue_600};
@@ -16,9 +12,7 @@ export const ContactSection = styled.section`
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        padding: 1rem;
-
+        padding: 2rem 1rem;
         background-color: ${defaultTheme.blue_400};
         border-radius: 8px;
 
@@ -46,7 +40,19 @@ export const ContactSection = styled.section`
         & .contact-map {
             border-radius: 8px;
             width: 50%;
-            height: 400px;
+            height: 25rem;
         }
     }
+
+@media (max-width: 1920px) {
+    &{
+        padding-inline: 6rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    &{
+        padding: 0;
+    }
+}
 `;  

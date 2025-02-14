@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const AboutMe = styled.section`
   display: flex;
-  padding-inline: 120px;
+  padding-inline: 6rem;
   padding-block: 6rem;
 
   justify-content: space-between;
@@ -32,11 +32,11 @@ export const AboutMe = styled.section`
  @media (max-width: 1920px) {
 
  #containerAbout {
-  margin-left: 0rem;
+  margin-right: 6rem;
 }
 
 #imgProfile {
-  margin-left: 2rem;
+  margin-left: 6rem;
 }
 }
 
@@ -44,6 +44,7 @@ export const AboutMe = styled.section`
   
   #containerAbout {
   max-width: 30rem;
+  margin-right: 3rem;
 
   & h2 {
     margin-bottom: 0px;
@@ -52,7 +53,7 @@ export const AboutMe = styled.section`
 
 #imgProfile {
   width: 24rem;
-  margin-left: 0rem;  
+  margin-left: 0.5rem;  
 }
   }
 `;

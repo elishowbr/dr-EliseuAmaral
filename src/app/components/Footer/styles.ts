@@ -19,6 +19,7 @@ box-shadow: 0px -5px 3px rgba(0,0,0,0.2);
             & h3 {
                 color: ${defaultTheme.blue_600};
                 font-weight: 600;
+                user-select: none;
             }
             
             & a:hover {
