@@ -57,11 +57,12 @@ export function Especialidades() {
 
         <ul className="specialtys">
           {especialidades.map((item, index) => {
+            console.log(index)
             return (
               <li
                 key={index}
                 className="specialtyitem"
-                tabIndex={index}
+                tabIndex={0}
                 onClick={() => setSelect(item)}
               >
                 <Image src={item.pathIcon} alt={item.alt} width={50} height={50} />
