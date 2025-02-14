@@ -28,20 +28,18 @@ export const AboutMe = styled.section`
     }
   }
 
-
- @media (max-width: 1920px) {
-
- #containerAbout {
-  margin-right: 6rem;
-}
-
-#imgProfile {
-  margin-left: 6rem;
-}
-}
-
-@media (max-width: 1280px) {
+  /* Smartphones médios e grandes */
+@media (min-width: 375px) {
   
+}
+
+/* Tablets e smartphones no modo paisagem */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
   #containerAbout {
   max-width: 30rem;
   margin-right: 3rem;
@@ -55,5 +53,20 @@ export const AboutMe = styled.section`
   width: 24rem;
   margin-left: 0.5rem;  
 }
-  }
+}
+
+
+@media (min-width: 1440px) {
+
+  #containerAbout {
+  max-width: 38rem;
+  margin-right: 6rem;
+}
+
+#imgProfile {
+  margin-left: 6rem;
+}
+
+}
+
 `;

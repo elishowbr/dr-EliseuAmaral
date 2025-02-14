@@ -44,15 +44,29 @@ export const ContactSection = styled.section`
         }
     }
 
-@media (max-width: 1920px) {
-    &{
-        padding-inline: 6rem;
-    }
+/* Smartphones médios e grandes */
+@media (min-width: 375px) {
+
 }
 
-@media (max-width: 1280px) {
+/* Tablets e smartphones no modo paisagem */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
     &{
         padding: 0;
     }
+
+}
+
+@media (min-width: 1440px) {
+
+    &{
+        padding-inline: 6rem;
+    }
+
 }
 `;  

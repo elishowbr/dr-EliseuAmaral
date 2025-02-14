@@ -84,9 +84,30 @@ export const Main = styled.main`
     }
   }
 
-  @media (max-width: 1920px) {
+/* Smartphones médios e grandes */
+@media (min-width: 375px) {
 
+}
+
+/* Tablets e smartphones no modo paisagem */
+@media (min-width: 768px) {
+
+}
+  @media (min-width: 1024px) {
+    
     h2, .servicos {
+      margin-left: 0.5rem;
+    }
+
+    .card {
+      max-width: 30rem;
+      margin-right: 3rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+  h2, .servicos {
       margin-left: 6rem;
 
       & .specialtyitem {
@@ -98,17 +119,5 @@ export const Main = styled.main`
       max-width: 38rem;
       margin-right: 6rem;
     }
-  }
-
-  @media (max-width: 1280px) {
-
-    h2, .servicos {
-      margin-left: 0.5rem;
-    }
-
-    .card {
-      max-width: 30rem;
-      margin-right: 3rem;
-    }
-  }
+}
 `;

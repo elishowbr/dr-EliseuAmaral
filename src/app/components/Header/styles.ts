@@ -12,10 +12,10 @@ export const Head = styled.header`
     display: flex;
     align-items: center;
     gap: 0.75rem;
-  }
 
-  & .logoInfo {
-    & > h1 {
+    & .logoInfo {
+
+    & h1 {
       font-size: 2.25rem;
       transition: color 0.3s ease-in-out;
 
@@ -33,7 +33,11 @@ export const Head = styled.header`
         color: ${defaultTheme.blue_600};
       }
     }
+
   }
+}
+
+
 
   & .headerInfo {
     display: flex;
@@ -79,23 +83,33 @@ export const Head = styled.header`
     }
   }
 
-  @media (max-width: 1920px) {
-    .logo {
+/* Smartphones médios e grandes */
+@media (min-width: 375px) {
+
+}
+
+/* Tablets e smartphones no modo paisagem */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+  .logo {
+      margin: 0;
+    }
+
+    .headerInfo {
+      margin: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+  .logo {
       margin-left: 4rem;
     }
 
     .headerInfo {
       margin-right: 4rem;
     }
-  }
-
-  @media (max-width: 1280px) {
-    .logo {
-      margin: 0;
-    }
-
-    .headerInfo {
-      margin: 0;
-    }
-  }
+}
 `;
