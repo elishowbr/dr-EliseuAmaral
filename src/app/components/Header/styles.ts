@@ -16,15 +16,19 @@ export const Head = styled.header`
     & .logoInfo {
 
     & h1 {
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       transition: color 0.3s ease-in-out;
 
       &:hover {
         color: ${defaultTheme.blue_600};
       }
     }
+    
+    & p:first-of-type {
+      line-height: 0;
+    }
 
-    & p {
+    & p:last-of-type {
       text-align: end;
       line-height: 0;
       transition: color 0.3s ease-in-out;
