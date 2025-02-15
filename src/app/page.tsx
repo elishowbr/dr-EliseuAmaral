@@ -18,7 +18,7 @@ export default function Home() {
         {/* <Header /> */}
         {/* <HeroSection/> */}
         {/* <Especialidades/> */}
-        {/* <About/> */}
+        <About/>
         <Contact/>
         <Rodape />
       </ThemeProvider>

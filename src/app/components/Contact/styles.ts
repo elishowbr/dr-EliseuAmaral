@@ -41,19 +41,21 @@ export const ContactSection = styled.section`
             border-radius: 8px;
             width: 100%;
             max-width: 33rem;
-            /* height: 25rem; */
+            height: 25rem;
         }
     }
 
 /* Smartphones médios e grandes */
 @media (min-width: 375px) and (max-width: 768px){
-    margin: 1rem 1rem 6rem;
+    
+    margin: 1rem 1rem 4rem;
     & #contact-container{
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
     & .contact-map{
+        height: fit-content !important;
         aspect-ratio: 1;
     }
 }

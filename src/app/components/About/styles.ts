@@ -29,44 +29,61 @@ export const AboutMe = styled.section`
   }
 
   /* Smartphones médios e grandes */
-@media (min-width: 375px) {
-  
-}
+  /* Smartphones médios e grandes */
+  @media (min-width: 375px) and (max-width: 768px) {
 
-/* Tablets e smartphones no modo paisagem */
-@media (min-width: 768px) {
+    padding-inline: 2rem;
 
-}
+    flex-direction: column;
+    align-items: center;
 
-@media (min-width: 1024px) {
+    & #imgProfile {
+      height: 100%;
+      width: 100%;
+      max-width: 400px;
 
-  #containerAbout {
-  max-width: 30rem;
-  margin-right: 3rem;
+      aspect-ratio: 1/1;
 
-  & h2 {
-    margin-bottom: 0px;
+      margin-bottom: 4rem;
+    }
+
+    & #containerAbout {
+      text-align: center;
+      & h2 {
+      }
+      & p {
+      }
+    }
   }
-}
 
-#imgProfile {
-  width: 24rem;
-  margin-left: 0.5rem;  
-}
-}
+  /* Tablets e smartphones no modo paisagem */
+  @media (min-width: 768px) {
+  }
 
+  @media (min-width: 1024px) {
+    #containerAbout {
+      max-width: 30rem;
+      margin-right: 3rem;
 
-@media (min-width: 1440px) {
+      & h2 {
+        margin-bottom: 0px;
+      }
+    }
 
-  #containerAbout {
-  max-width: 38rem;
-  margin-right: 6rem;
-}
+    #imgProfile {
+      width: 24rem;
+      margin-left: 0.5rem;
+    }
+  }
 
-#imgProfile {
-  margin-left: 6rem;
-}
+  @media (min-width: 1440px) {
+    #containerAbout {
+      max-width: 38rem;
+      margin-right: 6rem;
+    }
 
-}
-
+    #imgProfile {
+      margin-left: 6rem;
+    }
+  }
 `;
