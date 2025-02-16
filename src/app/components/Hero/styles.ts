@@ -29,7 +29,6 @@ export const Hero = styled.section`
     display: flex;
     background-color: rgba(74, 145, 226, 0.65);
     border-radius: 18px;
-
     height: 6rem;
     width: 21rem;
     align-items: center;
@@ -42,8 +41,8 @@ export const Hero = styled.section`
     }
 
     & p {
-        color: white;
-        font-size: 1.1rem;
+      color: white;
+      font-size: 1.1rem;
     }
 
     & #circle {
@@ -54,11 +53,10 @@ export const Hero = styled.section`
     justify-content: center;
     align-items: center;
     background-color: ${defaultTheme.white};
-
     position: absolute;
     left: -2.5rem;
   }
-  }
+}
 
 /* Smartphones médios e grandes */
 @media (min-width: 375px) {
@@ -70,32 +68,30 @@ export const Hero = styled.section`
 
 }
 
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
 
-  & h1 {
+  h2 {
     margin: 0;
   }
 
-    & .hero-items {
-      margin: 0;
-      padding: 0;
-      justify-content: space-around;
+  & .hero-items {
+    margin: 0;
+    flex-flow: column;
+    gap: 1rem;
 
-      & .hero-item {
-        max-width: 20rem;
+    & .hero-item {
+      max-width: 20rem;
 
-      & p {
-        font-size: 1rem;
-      }
+    & p {
+      font-size: 1rem;
     }
   }
+
+}
 }
 
 @media (min-width: 1440px) {
 
-& h1 {
-      margin-left: 6rem;
-    }
 }
 
 `;

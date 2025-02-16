@@ -32,12 +32,6 @@ export function Rodape() {
                     <a target="_blank" href="https://wa.me/85988994048?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação!">Fale conosco via Whatsapp</a>
                     <a href="mailto:eliseu.mrl@gmail.com">Fale conosco via E-mail</a>
                 </li>
-
-          <li>
-            <h3>Sobre</h3>
-            <a href="#sobre">Sobre mim</a>
-            <a href="#sobre">Sobre nós</a>
-          </li>
         </ul>
       </Footer>
     );

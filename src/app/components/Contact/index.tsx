@@ -20,6 +20,10 @@ export function Contact() {
             <a href="tel:+5585988994048">(85) 98899-4048</a>
           </li>
           <li>
+            <Image src={"/icons/smartphone.svg"} alt="" width={25} height={25} />
+            <a href="tel:+5585988989216">(85) 98898-9216</a>
+          </li>
+          <li>
             <Image src={"/icons/whatsapp.svg"} alt="" width={25} height={25} />
             <a
               href="https://wa.me/85988994048?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação!"

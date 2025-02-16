@@ -29,11 +29,8 @@ export const AboutMe = styled.section`
   }
 
   /* Smartphones médios e grandes */
-  /* Smartphones médios e grandes */
-  @media (min-width: 375px) and (max-width: 768px) {
-
+  @media (min-width: 375px) {
     padding-inline: 2rem;
-
     flex-direction: column;
     align-items: center;
 
@@ -41,18 +38,11 @@ export const AboutMe = styled.section`
       height: 100%;
       width: 100%;
       max-width: 400px;
-
-      aspect-ratio: 1/1;
-
       margin-bottom: 4rem;
     }
 
     & #containerAbout {
       text-align: center;
-      & h2 {
-      }
-      & p {
-      }
     }
   }
 
@@ -63,10 +53,9 @@ export const AboutMe = styled.section`
   @media (min-width: 1024px) {
     #containerAbout {
       max-width: 30rem;
-      margin-right: 3rem;
 
       & h2 {
-        margin-bottom: 0px;
+        margin-bottom: 1rem;
       }
     }
 

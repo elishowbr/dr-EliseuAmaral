@@ -29,18 +29,14 @@ box-shadow: 0px 5px 3px rgba(0,0,0,0.2) inset;
     }
 
     /* Smartphones médios e grandes */
-@media (min-width: 375px) and (max-width: 768px){
+@media (min-width: 375px) {
     padding: 2rem 1rem;
+
     & ul {
         padding: 0;
-        gap: 0;
         display: grid;
         grid-template-columns: repeat(2, 2fr);
-        gap: 16px;
-        justify-content: initial;
-        & li{
-            
-        }
+        gap: 2rem;
     }
 }
 /* Tablets e smartphones no modo paisagem */
@@ -51,7 +47,7 @@ box-shadow: 0px 5px 3px rgba(0,0,0,0.2) inset;
 @media (min-width: 1024px) {
 
     &{
-        padding: 0;
+        padding: 2rem 6rem;
     }
 
 }

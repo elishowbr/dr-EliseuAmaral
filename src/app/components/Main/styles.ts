@@ -16,7 +16,7 @@ export const Main = styled.main`
   & .servicos {
     display: flex;
     justify-content: space-between;
-    height: 31rem;
+    height: 33rem;
   }
 
   & .card {
@@ -93,16 +93,41 @@ export const Main = styled.main`
 @media (min-width: 768px) {
 
 }
-  @media (min-width: 1024px) {
-    
-    h2, .servicos {
-      margin-left: 0.5rem;
-    }
+@media (min-width: 1024px) {
 
-    .card {
-      max-width: 30rem;
-      margin-right: 3rem;
+  h2 { 
+    text-align: center;
+  }
+  .servicos {
+    flex-flow: column-reverse;
+    align-items: center;
+    height: 45rem;
+    gap: 2rem;
+  }
+
+  .specialtys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    .specialtyitem {
+      width: 16rem;
+      transition: transform 0.3s;
+
+      &:focus {
+        box-shadow: 0 0 0 2px ${defaultTheme.blue_400};
+        background-color: ${defaultTheme.blue_600};
+        color: ${defaultTheme.white};
+        margin-left: 0;
+        transform: scale(1.02);
+      }
     }
+  }
+
+
+  .card {
+    max-width: 30rem;
+  }
 }
 
 @media (min-width: 1440px) {

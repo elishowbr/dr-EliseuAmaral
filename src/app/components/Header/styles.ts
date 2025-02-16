@@ -18,10 +18,8 @@ export const Head = styled.header`
     & h1 {
       font-size: 2.5rem;
       transition: color 0.3s ease-in-out;
+      color: ${defaultTheme.blue_600};
 
-      &:hover {
-        color: ${defaultTheme.blue_600};
-      }
     }
     
     & p:first-of-type {
@@ -37,7 +35,6 @@ export const Head = styled.header`
         color: ${defaultTheme.blue_600};
       }
     }
-
   }
 }
 
@@ -98,13 +95,46 @@ export const Head = styled.header`
 }
 
 @media (min-width: 1024px) {
+  & {
+    padding: 1.25rem 2rem;
+  }
+
   .logo {
       margin: 0;
+
+  .logoInfo {
+
+    & h1 {
+    line-height: 1.1;
     }
 
-    .headerInfo {
-      margin: 0;
+    & p:first-of-type {
+    line-height: 1.1;
     }
+  
+    & p:last-of-type {
+    line-height: 1.1;
+    }
+  }
+  }
+
+  .headerInfo {
+    margin: 0;
+    text-align: center;
+
+    & nav {
+      gap: 0;
+
+      a {
+        font-size: 1rem;
+      }
+    }
+
+    #wppContact {
+      font-size: 1.15rem;
+      padding: 0.5 0.75rem;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
