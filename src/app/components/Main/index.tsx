@@ -4,6 +4,7 @@ import Image from "next/image";
 
 const especialidades = [
   {
+    id : "implantodontia",
     name: "Implantodontia",
     pathIcon: "/images/especiaIcon1.png",
     alt: "Implantodontia",
@@ -12,6 +13,7 @@ const especialidades = [
       "A implantodontia é a especialidade responsável pela reabilitação de pacientes que perderam um ou mais dentes, utilizando implantes dentários. O implante é um pequeno parafuso de titânio fixado no osso da mandíbula ou maxila, substituindo a raiz do dente perdido. Sobre ele, é colocada uma coroa protética que imita um dente natural.",
   },
   {
+    id : "reabilitacao",
     name: "Reabilitação Oral",
     pathIcon: "/images/especiaIcon2.png",
     alt: "Reabilitação Oral",
@@ -20,6 +22,7 @@ const especialidades = [
       "A reabilitação oral é um conjunto de procedimentos odontológicos que restauram a função, a saúde e a estética do sorriso. É indicada para pacientes que apresentam perdas dentárias, desgastes severos, problemas na mordida ou dificuldades na fala e mastigação.",
   },
   {
+    id : "proteses",
     name: "Próteses",
     pathIcon: "/images/especiaIcon3.png",
     alt: "Próteses",
@@ -28,6 +31,7 @@ const especialidades = [
       "A especialidade de próteses dentárias foca na substituição de dentes perdidos, devolvendo estética e funcionalidade ao sorriso. Existem diferentes tipos de próteses, cada uma indicada para um caso específico.",
   },
   {
+    id : "cirurgias",
     name: "Cirurgias",
     pathIcon: "/images/especiaIcon4.png",
     alt: "Cirurgias",
@@ -36,6 +40,7 @@ const especialidades = [
       "A cirurgia odontológica abrange diversos procedimentos que exigem intervenções mais complexas para a saúde bucal. Essas cirurgias podem ser corretivas, reparadoras ou preventivas.",
   },
   {
+    id : "endodontia",
     name: "Endodontia",
     pathIcon: "/images/especiaIcon5.png",
     alt: "Endodontia",
@@ -44,6 +49,7 @@ const especialidades = [
       "A endodontia é a área da odontologia responsável pelo tratamento da polpa dentária (nervo do dente). O procedimento mais comum dessa especialidade é o tratamento de canal, indicado quando a polpa dentária está infeccionada ou inflamada devido a cáries profundas, traumas ou fraturas.",
   },
   {
+    id : "periodontia",
     name: "Periodontia",
     pathIcon: "/images/especiaIcon6.png",
     alt: "Periodontia",

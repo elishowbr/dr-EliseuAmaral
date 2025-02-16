@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <Hero>
         
-        <h1>Agende sua consulta hoje mesmo e transforme seu sorriso!</h1>
+        <h2>Agende sua consulta hoje mesmo e transforme seu sorriso!</h2>
 
         <ul className="hero-items">
 

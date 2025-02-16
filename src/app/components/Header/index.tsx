@@ -9,7 +9,8 @@ export function Header() {
         <div className="logo">
           <Image src={Logo} alt="Logo" />
           <div className="logoInfo">
-          <h1>Dr. Eliseu Amaral</h1>
+          <p>Dr.</p>
+          <h1>Eliseu Amaral</h1>
           <p>CRO-CE 2354</p>
           </div>
         </div>

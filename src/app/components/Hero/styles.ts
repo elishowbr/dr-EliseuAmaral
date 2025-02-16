@@ -12,10 +12,10 @@ export const Hero = styled.section`
   background-image: url("images/foto.jpg");
   background-size: cover;
 
-  & h1 {
+  & h2 {
     margin-left: 2rem;
     width: 696px;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: ${defaultTheme.blue_600}
   }
 
