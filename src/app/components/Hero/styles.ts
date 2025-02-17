@@ -60,7 +60,30 @@ export const Hero = styled.section`
 
 /* Smartphones médios e grandes */
 @media (min-width: 375px) {
+  & {
+    padding: 0;
+    height: fit-content;
 
+    & h2 {
+      display: none;
+    }
+
+    & .hero-items{
+      flex-direction: column;
+      gap: 2rem;
+      margin: 3rem 0;
+
+      & .hero-item{
+        height: 75px;
+
+        #circle {
+          left: -1rem;
+          width: 75px;
+          height: 75px;
+        }
+      }
+    }
+  }
 }
 
 /* Tablets e smartphones no modo paisagem */
