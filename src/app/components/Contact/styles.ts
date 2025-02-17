@@ -46,9 +46,17 @@ export const ContactSection = styled.section`
     }
 
 /* Smartphones médios e grandes */
-@media (min-width: 375px) and (max-width: 768px){
-    
+@media (min-width: 375px){
     margin: 1rem 1rem 4rem;
+
+    & h2 {
+        text-align: center;
+    }
+    ul {
+        align-self: flex-start;
+        padding-left: 3rem;
+    }
+
     & #contact-container{
         display: flex;
         flex-direction: column;
@@ -61,7 +69,7 @@ export const ContactSection = styled.section`
 }
 /* Tablets e smartphones no modo paisagem */
 @media (min-width: 768px) {
-
+    margin: 0 4rem 2rem 4rem;
 }
 
 @media (min-width: 1024px) {

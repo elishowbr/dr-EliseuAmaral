@@ -89,6 +89,22 @@ export const Hero = styled.section`
 /* Tablets e smartphones no modo paisagem */
 @media (min-width: 768px) {
 
+  & h2 {
+    align-self: end;
+    display: block;
+    margin: 2rem 2rem 0 0;
+    max-width: 80%;
+    text-align: end;
+  }
+
+  & .hero-items {
+    margin-left: 1rem;
+    
+    & .hero-item {
+    line-height: 1.3;
+  }
+  }
+
 }
 
 @media (min-width: 1024px) {

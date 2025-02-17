@@ -45,6 +45,10 @@ export const AboutMe = styled.section`
 
   /* Tablets e smartphones no modo paisagem */
   @media (min-width: 768px) {
+    & #imgProfile {
+      height: 60%;
+      width: 60%;
+    }
   }
 
   @media (min-width: 1024px) {

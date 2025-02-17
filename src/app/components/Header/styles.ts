@@ -121,6 +121,12 @@ export const Head = styled.header`
 /* Tablets e smartphones no modo paisagem */
 @media (min-width: 768px) {
 
+  & .logoInfo {
+    & p:first-of-type {
+      display: block;
+      padding-top: 0.5rem;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
