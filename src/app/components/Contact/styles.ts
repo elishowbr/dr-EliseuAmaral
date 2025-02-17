@@ -52,10 +52,7 @@ export const ContactSection = styled.section`
     & h2 {
         text-align: center;
     }
-    ul {
-        align-self: flex-start;
-        padding-left: 3rem;
-    }
+
 
     & #contact-container{
         display: flex;
@@ -76,6 +73,15 @@ export const ContactSection = styled.section`
 
     &{
         padding: 0;
+        margin: 0 6rem 2rem 6rem;
+
+        & h2 {
+            text-align: start;
+        }
+    }
+
+    & #contact-container {
+        flex-direction: row;
     }
 
 }

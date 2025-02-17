@@ -90,16 +90,14 @@ export const Hero = styled.section`
 @media (min-width: 768px) {
 
   & h2 {
-    align-self: end;
     display: block;
-    margin: 2rem 2rem 0 0;
+    margin: 2rem 0 0 2rem;
     max-width: 80%;
-    text-align: end;
   }
 
   & .hero-items {
     margin-left: 1rem;
-    
+
     & .hero-item {
     line-height: 1.3;
   }
@@ -109,13 +107,19 @@ export const Hero = styled.section`
 
 @media (min-width: 1024px) {
 
+  & {
+    padding: 2rem 3rem;
+    gap: 2rem;
+    height: 600px;
+  }
+
   h2 {
-    margin: 0;
+    margin: 0 1rem;
   }
 
   & .hero-items {
     margin: 0;
-    flex-flow: column;
+    flex-flow: row;
     gap: 1rem;
 
     & .hero-item {

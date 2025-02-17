@@ -135,7 +135,11 @@ export const Head = styled.header`
   }
 
   .logo {
-      margin: 0;
+    margin: 0;
+    
+    & img {
+      display: block;
+    }
 
   .logoInfo {
 
@@ -149,6 +153,7 @@ export const Head = styled.header`
   
     & p:last-of-type {
     line-height: 1.1;
+    text-align: end;
     }
   }
   }

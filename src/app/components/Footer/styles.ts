@@ -30,7 +30,7 @@ box-shadow: 0px 5px 3px rgba(0,0,0,0.2) inset;
 
     /* Smartphones médios e grandes */
 @media (min-width: 375px) {
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
 
     & ul {
         padding: 0;

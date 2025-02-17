@@ -52,8 +52,12 @@ export const AboutMe = styled.section`
   }
 
   @media (min-width: 1024px) {
+    flex-direction: row;
+    margin: 0 3rem;
+    
     #containerAbout {
       max-width: 30rem;
+      text-align: start;
 
       & h2 {
         margin-bottom: 1rem;
