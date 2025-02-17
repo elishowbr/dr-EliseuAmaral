@@ -42,7 +42,7 @@ export const Hero = styled.section`
 
     & p {
       color: white;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     & #circle {
@@ -108,7 +108,7 @@ export const Hero = styled.section`
 @media (min-width: 1024px) {
 
   & {
-    padding: 2rem 3rem;
+    padding: 2rem 1.5rem;
     gap: 2rem;
     height: 600px;
   }
