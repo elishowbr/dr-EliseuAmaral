@@ -3,9 +3,7 @@ import styled from 'styled-components'
 
 export const AboutMe = styled.section`
   display: flex;
-  padding-inline: 6rem;
-  padding-block: 6rem;
-
+  padding: 6rem 0rem;
   justify-content: space-between;
 
   & #imgProfile {
@@ -20,7 +18,7 @@ export const AboutMe = styled.section`
     & h2{
     color: ${defaultTheme.blue_600};
     letter-spacing: 1px;
-    margin-bottom: 26px;
+    margin-bottom: 1.5rem;
   }
 
     & p {
@@ -37,7 +35,6 @@ export const AboutMe = styled.section`
     & #imgProfile {
       height: 100%;
       width: 100%;
-      max-width: 400px;
       margin-bottom: 4rem;
     }
 

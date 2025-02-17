@@ -27,7 +27,6 @@ export const Head = styled.header`
     }
 
     & p:last-of-type {
-      text-align: end;
       line-height: 0;
       transition: color 0.3s ease-in-out;
 
@@ -87,6 +86,36 @@ export const Head = styled.header`
 /* Smartphones médios e grandes */
 @media (min-width: 375px) {
 
+  & {
+    padding: 1rem 1rem;
+
+    & img {
+      display: none;
+    }
+  }
+
+  & .logoInfo {
+
+    h1 {
+      line-height: 1.4;
+    }
+
+    & p:first-of-type {
+      display: none;
+    }
+
+    & p:last-of-type {
+      text-align: start;
+    }
+  }
+
+  & nav {
+    display: none !important;
+  }
+
+  & #wppContact {
+    text-align: center;
+  }
 }
 
 /* Tablets e smartphones no modo paisagem */
