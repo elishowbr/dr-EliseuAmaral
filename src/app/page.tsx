@@ -16,7 +16,7 @@ export default function Home() {
       <ThemeProvider theme={defaultTheme}>
         <GlobalStyle />
         <Header /> 
-        {/* <HeroSection/> */}
+        <HeroSection/>
         {/* <Especialidades/> */}
         <About/>
         <Contact/>
