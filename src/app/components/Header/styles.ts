@@ -1,6 +1,5 @@
 import { defaultTheme } from "@/app/styles/theme/default";
 import { styled } from "styled-components";
-import wpp from "/icons/whatsapp.svg";
 
 interface WhatsappButtonProps {
   $text?: string | null
