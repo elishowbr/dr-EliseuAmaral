@@ -88,8 +88,8 @@ export function Especialidades() {
             src={select.exampleImg}
             alt={select.alt}
             id="imgCard"
-            width={627}
-            height={294}
+            width={628}
+            height={300}
           />
           <div id="textCard">
 

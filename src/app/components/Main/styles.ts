@@ -2,8 +2,8 @@ import { defaultTheme } from '@/app/styles/theme/default';
 import { styled } from 'styled-components';
 
 export const Main = styled.main`
-  margin-inline: 6rem;
-  margin-block: 3.5rem 3rem;
+  margin-inline: 12rem;
+  margin-block: 3rem;
 
   & h2 {
     font-size: 2.5rem;
@@ -22,6 +22,8 @@ export const Main = styled.main`
   & .card {
     background-color: ${defaultTheme.white};
     max-width: 38rem;
+    height: fit-content;
+    align-self: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 
@@ -55,7 +57,6 @@ export const Main = styled.main`
     user-select: none;
 
     & .specialtyitem {
-      list-style: none;
       display: flex;
       align-items: center;
       width: 24rem;
@@ -85,15 +86,17 @@ export const Main = styled.main`
   }
 
 /* Smartphones médios e grandes */
-@media (min-width: 375px) {
+@media (min-width: 375px)  and (max-width: 767px) {
 
 }
 
 /* Tablets e smartphones no modo paisagem */
-@media (min-width: 768px) {
+@media (min-width: 768px)  and (max-width: 1023px) {
+  
 
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px)  and (max-width: 1439px) {
+    margin-inline: 6rem;
 
   h2 { 
     text-align: center;
@@ -101,8 +104,8 @@ export const Main = styled.main`
   .servicos {
     flex-flow: column-reverse;
     align-items: center;
-    height: 45rem;
-    gap: 2rem;
+    height: 46rem;
+    gap: 3rem;
   }
 
   .specialtys {
@@ -132,17 +135,7 @@ export const Main = styled.main`
 
 @media (min-width: 1440px) {
 
-  h2, .servicos {
-      margin-left: 6rem;
 
-      & .specialtyitem {
-        width: 25rem;
-      }
-    }
 
-    .card {
-      max-width: 38rem;
-      margin-right: 6rem;
-    }
 }
 `;
