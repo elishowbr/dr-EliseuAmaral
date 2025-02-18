@@ -1,5 +1,5 @@
-import { defaultTheme } from '@/app/styles/theme/default';
-import { styled } from 'styled-components';
+import { defaultTheme } from "@/app/styles/theme/default";
+import { styled } from "styled-components";
 
 export const Main = styled.main`
   margin-inline: 12rem;
@@ -65,7 +65,8 @@ export const Main = styled.main`
       border-radius: 8px;
       background-color: ${defaultTheme.white};
       border: 1px solid ${defaultTheme.blue_600};
-      transition: background-color 0.2s, color 0.2s, outline 0.05s ease-in-out, margin 0.3s;
+      transition: background-color 0.2s, color 0.2s, outline 0.05s ease-in-out,
+        margin 0.3s;
 
       & h4 {
         font-weight: 600;
@@ -85,57 +86,51 @@ export const Main = styled.main`
     }
   }
 
-/* Smartphones médios e grandes */
-@media (min-width: 375px)  and (max-width: 767px) {
+  /* Smartphones médios e grandes */
+  @media (min-width: 375px) and (max-width: 767px) {
+  }
 
-}
-
-/* Tablets e smartphones no modo paisagem */
-@media (min-width: 768px)  and (max-width: 1023px) {
-  
-
-}
-@media (min-width: 1024px)  and (max-width: 1439px) {
+  /* Tablets e smartphones no modo paisagem */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin-inline: 12rem;
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
     margin-inline: 6rem;
 
-  h2 { 
-    text-align: center;
-  }
-  .servicos {
-    flex-flow: column-reverse;
-    align-items: center;
-    height: 46rem;
-    gap: 3rem;
-  }
+    h2 {
+      text-align: center;
+    }
+    .servicos {
+      flex-flow: column-reverse;
+      align-items: center;
+      height: 46rem;
+      gap: 3rem;
+    }
 
-  .specialtys {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    .specialtys {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
 
-    .specialtyitem {
-      width: 16rem;
-      transition: transform 0.3s;
+      .specialtyitem {
+        width: 16rem;
+        transition: transform 0.3s;
 
-      &:focus {
-        box-shadow: 0 0 0 2px ${defaultTheme.blue_400};
-        background-color: ${defaultTheme.blue_600};
-        color: ${defaultTheme.white};
-        margin-left: 0;
-        transform: scale(1.02);
+        &:focus {
+          box-shadow: 0 0 0 2px ${defaultTheme.blue_400};
+          background-color: ${defaultTheme.blue_600};
+          color: ${defaultTheme.white};
+          margin-left: 0;
+          transform: scale(1.02);
+        }
       }
+    }
+
+    .card {
+      max-width: 30rem;
     }
   }
 
-
-  .card {
-    max-width: 30rem;
+  @media (min-width: 1440px) {
   }
-}
-
-@media (min-width: 1440px) {
-
-
-
-}
 `;
