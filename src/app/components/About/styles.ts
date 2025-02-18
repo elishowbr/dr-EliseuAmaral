@@ -3,17 +3,25 @@ import styled from 'styled-components'
 
 export const AboutMe = styled.section`
   display: flex;
-  padding: 6rem 0rem;
+  padding-inline: 6rem;
+  padding-block: 6rem;
+
+  gap: 3rem;
+
+  align-items: center;
   justify-content: space-between;
 
   & #imgProfile {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   }
 
   & #containerAbout {
-    max-width: 615px;
+    max-width: 40rem;
 
     & h2 {
     color: ${defaultTheme.blue_600};
@@ -27,14 +35,12 @@ export const AboutMe = styled.section`
   }
 
   /* Smartphones médios e grandes */
-  @media (min-width: 375px) {
+  @media (min-width: 375px) and (max-width: 767px) {
     padding-inline: 2rem;
     flex-direction: column;
-    align-items: center;
+    gap: 0;
 
     & #imgProfile {
-      height: 50%;
-      width: 50%;
       margin-bottom: 4rem;
     }
 
@@ -44,8 +50,12 @@ export const AboutMe = styled.section`
   }
 
   /* Tablets e smartphones no modo paisagem */
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding-inline: 2rem;
 
+    & #imgProfile {
+      max-width: 324px;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -68,13 +78,11 @@ export const AboutMe = styled.section`
   }
 
   @media (min-width: 1440px) {
-    #containerAbout {
-      max-width: 38rem;
-      margin-right: 6rem;
-    }
+    /* Refactor: so incrementar mais padding na borda ao inves de adicionar um seletor
+    e colocar margin */
+    
+    padding-inline: 12rem;
+    padding-block: 12rem;
 
-    #imgProfile {
-      margin-left: 6rem;
-    }
   }
 `;

@@ -42,7 +42,7 @@ export const Hero = styled.section`
 
     & p {
       color: white;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     & #circle {

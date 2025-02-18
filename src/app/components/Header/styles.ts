@@ -1,6 +1,29 @@
 import { defaultTheme } from "@/app/styles/theme/default";
 import { styled } from "styled-components";
 
+interface WhatsappButtonProps {
+  $text?: string | null
+}
+
+export const WhatsappButton = styled.a<WhatsappButtonProps>`
+  background-color: ${defaultTheme.blue_400};
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+
+  &::after {
+    content: "${(props) => props.$text || "Fale conosco"}";
+  }
+
+  &:hover {
+    background-color: ${defaultTheme.blue_600};
+  }
+`;
 export const Head = styled.header`
   display: flex;
   align-items: center;
@@ -25,9 +48,9 @@ export const Head = styled.header`
       line-height: 0;
     }
 
-    & p:last-of-type {
-      line-height: 0;
-      transition: color 0.3s ease-in-out;
+      & p:last-of-type {
+        line-height: 0;
+        transition: color 0.3s ease-in-out;
 
       &:hover {
         color: ${defaultTheme.blue_600};
@@ -62,26 +85,34 @@ export const Head = styled.header`
         }
       }
     }
+  }
+
+  /* Smartphones médios e grandes */
+  @media (min-width: 375px) and (max-width: 767px) {
+    padding: 1.25rem 2rem;
+
+    & .headerInfo > nav {
+      display: none;
+    }
 
     & #wppContact {
-      background-color: ${defaultTheme.blue_400};
-      color: white;
-      padding: 0.5rem 1rem;
-      border: 0;
-      border-radius: 8px;
-      font-size: 1.25rem;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: background-color 0.2s, transform 0.2s;
+      display: flex;
+      padding: 0.5rem;
+      align-items: center;
+      justify-content: center;
 
-      &:hover {
-        background-color: ${defaultTheme.blue_600};
+      border-radius: 50%;
+      &::after {
+        content: "";
+        height: 40px;
+        width: 40px;
+        background: url("/icons/whatsapp.svg") no-repeat center;
       }
     }
   }
 
 /* Smartphones médios e grandes */
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 767px){
 
   & {
     padding: 1rem 1rem;
@@ -112,9 +143,6 @@ export const Head = styled.header`
   }
   }
 
-  & #wppContact {
-    text-align: center;
-  }
 }
 
 /* Tablets e smartphones no modo paisagem */
@@ -133,7 +161,6 @@ export const Head = styled.header`
 
   & {
     padding: 1.25rem 2rem;
-  }
 
   .logo {
     margin: 0;
@@ -141,11 +168,11 @@ export const Head = styled.header`
     & img {
       display: block;
     }
+  }
 
-  .logoInfo {
-
-    & h1 {
-    line-height: 1.1;
+  @media (min-width: 1024px) {
+    & {
+      padding: 2rem 2rem;
     }
 
     & p:first-of-type {
@@ -159,25 +186,25 @@ export const Head = styled.header`
   }
   }
 
-  .headerInfo {
-    margin: 0;
-    text-align: center;
+    .headerInfo {
+      margin: 0;
+      text-align: center;
 
     & nav {
       display: flex;
       gap: 1rem;
 
-      a {
-        font-size: 1rem;
+        a {
+          font-size: 1rem;
+        }
+      }
+
+      #wppContact {
+        font-size: 1.15rem;
+        padding: 0.5 0.75rem;
       }
     }
-
-    #wppContact {
-      font-size: 1.15rem;
-      padding: 0.5 0.75rem;
-    }
   }
-}
 
 @media (min-width: 1440px) {
 

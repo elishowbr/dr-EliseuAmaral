@@ -88,12 +88,11 @@ export function Especialidades() {
             src={select.exampleImg}
             alt={select.alt}
             id="imgCard"
-            width={627}
-            height={294}
+            width={628}
+            height={300}
           />
           <div id="textCard">
-            {/* TODO: Fazer a feat de que quando clickar em 
-            uma especialidade, Trocar as informaçoes do Card */}
+
             <h3 id="titleCard">{select.name}</h3>
             <p>{select.descricao}</p>
           </div>

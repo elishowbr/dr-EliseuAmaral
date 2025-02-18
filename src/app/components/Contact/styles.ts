@@ -4,53 +4,53 @@ import { styled } from 'styled-components'
 export const ContactSection = styled.section` 
     margin: 1rem 6rem 6rem 6rem;
 
-    & h2 {
-        color: ${defaultTheme.blue_600};
-    }
+  & h2 {
+    color: ${defaultTheme.blue_600};
+  }
 
-    & #contact-container {
+  & #contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: ${defaultTheme.blue_400};
+    border-radius: 8px;
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.75rem;
+
+      & li {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2rem 1rem;
-        background-color: ${defaultTheme.blue_400};
-        border-radius: 8px;
+        gap: 0.75rem;
 
-        & ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0.75rem;
+        & a {
+          color: white;
 
-            & li {
-                display: flex;
-                gap: 0.75rem;
-                
-                & a {
-                    color: white;
-
-                    &:hover {
-                        text-decoration: underline;
-                        color: white;
-                    }
-                }
-            }
+          &:hover {
+            text-decoration: underline;
+            color: white;
+          }
         }
-
-        & .contact-map {
-            border-radius: 8px;
-            width: 100%;
-            max-width: 33rem;
-            height: 25rem;
-        }
+      }
     }
 
-/* Smartphones médios e grandes */
-@media (min-width: 375px){
+    & .contact-map {
+      border-radius: 8px;
+      width: 100%;
+      max-width: 33rem;
+      height: 25rem;
+    }
+  }
+
+  /* Smartphones médios e grandes */
+  @media (min-width: 375px) and (max-width: 767px) {
     margin: 1rem 1rem 4rem;
 
     & h2 {
-        text-align: center;
+      margin-bottom: 16px;
     }
 
     & #contact-container{
@@ -63,11 +63,11 @@ export const ContactSection = styled.section`
         height: fit-content !important;
         aspect-ratio: 1;
     }
-}
-/* Tablets e smartphones no modo paisagem */
-@media (min-width: 768px) {
-    margin: 0 4rem 2rem 4rem;
-}
+  }
+  /* Tablets e smartphones no modo paisagem */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin: 1rem 2rem 4rem;
+  }
 
 @media (min-width: 1024px) {
 
@@ -83,14 +83,11 @@ export const ContactSection = styled.section`
     & #contact-container {
         flex-direction: row;
     }
+  }
 
-}
-
-@media (min-width: 1440px) {
-
-    &{
-        padding-inline: 6rem;
+  @media (min-width: 1440px) {
+    & {
+      padding-inline: 6rem;
     }
-
-}
+  }
 `;  
