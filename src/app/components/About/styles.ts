@@ -15,7 +15,7 @@ export const AboutMe = styled.section`
   & #containerAbout {
     max-width: 615px;
 
-    & h2{
+    & h2 {
     color: ${defaultTheme.blue_600};
     letter-spacing: 1px;
     margin-bottom: 1.5rem;

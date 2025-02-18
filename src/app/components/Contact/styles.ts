@@ -53,12 +53,12 @@ export const ContactSection = styled.section`
         text-align: center;
     }
 
-
     & #contact-container{
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
+
     & .contact-map{
         height: fit-content !important;
         aspect-ratio: 1;

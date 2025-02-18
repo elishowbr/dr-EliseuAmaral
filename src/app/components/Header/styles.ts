@@ -19,7 +19,6 @@ export const Head = styled.header`
       font-size: 2.5rem;
       transition: color 0.3s ease-in-out;
       color: ${defaultTheme.blue_600};
-
     }
     
     & p:first-of-type {
@@ -36,8 +35,6 @@ export const Head = styled.header`
     }
   }
 }
-
-
 
   & .headerInfo {
     display: flex;
@@ -130,17 +127,17 @@ export const Head = styled.header`
     }
   }
 
-
 }
 
 @media (min-width: 1024px) {
+
   & {
     padding: 1.25rem 2rem;
   }
 
   .logo {
     margin: 0;
-    
+
     & img {
       display: block;
     }
@@ -183,6 +180,7 @@ export const Head = styled.header`
 }
 
 @media (min-width: 1440px) {
+
   .logo {
       margin-left: 4rem;
     }
@@ -190,5 +188,6 @@ export const Head = styled.header`
     .headerInfo {
       margin-right: 4rem;
     }
+
 }
 `;
