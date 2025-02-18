@@ -92,7 +92,38 @@ export const Main = styled.main`
 
   /* Tablets e smartphones no modo paisagem */
   @media (min-width: 768px) and (max-width: 1023px) {
-    margin-inline: 12rem;
+    margin-inline: 6rem;
+
+    .servicos {
+      flex-flow: column-reverse;
+      align-items: center;
+      height: 38rem;
+      gap: 3rem;
+    }
+
+    & .specialtys {
+      display: grid;
+      grid-template-columns: repeat(6, 75px);
+      gap: 50px;
+      height: min-content;
+
+      & .specialtyitem {
+        padding: 0.5rem;
+        width: 75px;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+          display: none;
+        }
+
+        &:focus {
+          margin-left: 0rem;
+        }
+      }
+    }
+
   }
   @media (min-width: 1024px) and (max-width: 1439px) {
     margin-inline: 6rem;
