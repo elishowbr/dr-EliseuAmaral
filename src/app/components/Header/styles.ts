@@ -109,8 +109,10 @@ export const Head = styled.header`
     }
   }
 
-  & nav {
-    display: none !important;
+  .headerInfo {
+    & nav {
+    display: none;
+  }
   }
 
   & #wppContact {
@@ -127,6 +129,8 @@ export const Head = styled.header`
       padding-top: 0.5rem;
     }
   }
+
+
 }
 
 @media (min-width: 1024px) {
@@ -163,7 +167,8 @@ export const Head = styled.header`
     text-align: center;
 
     & nav {
-      gap: 0;
+      display: flex;
+      gap: 1rem;
 
       a {
         font-size: 1rem;

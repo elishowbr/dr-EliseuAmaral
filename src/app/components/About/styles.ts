@@ -33,8 +33,8 @@ export const AboutMe = styled.section`
     align-items: center;
 
     & #imgProfile {
-      height: 100%;
-      width: 100%;
+      height: 50%;
+      width: 50%;
       margin-bottom: 4rem;
     }
 
@@ -45,10 +45,7 @@ export const AboutMe = styled.section`
 
   /* Tablets e smartphones no modo paisagem */
   @media (min-width: 768px) {
-    & #imgProfile {
-      height: 60%;
-      width: 60%;
-    }
+
   }
 
   @media (min-width: 1024px) {
@@ -56,7 +53,7 @@ export const AboutMe = styled.section`
     margin: 0 3rem;
     
     #containerAbout {
-      max-width: 30rem;
+      max-width: 28rem;
       text-align: start;
 
       & h2 {

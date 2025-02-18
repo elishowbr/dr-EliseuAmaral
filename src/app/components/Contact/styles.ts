@@ -2,7 +2,7 @@ import { defaultTheme } from '@/app/styles/theme/default';
 import { styled } from 'styled-components'
 
 export const ContactSection = styled.section` 
-    margin: 1rem 6rem 4rem 6rem;
+    margin: 1rem 6rem 6rem 6rem;
 
     & h2 {
         color: ${defaultTheme.blue_600};
@@ -73,7 +73,7 @@ export const ContactSection = styled.section`
 
     &{
         padding: 0;
-        margin: 0 6rem 2rem 6rem;
+        margin: 0 6rem 4rem 6rem;
 
         & h2 {
             text-align: start;

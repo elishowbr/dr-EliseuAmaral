@@ -95,20 +95,13 @@ export const Hero = styled.section`
     max-width: 80%;
   }
 
-  & .hero-items {
-    margin-left: 1rem;
-
-    & .hero-item {
-    line-height: 1.3;
-  }
-  }
 
 }
 
 @media (min-width: 1024px) {
 
   & {
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     gap: 2rem;
     height: 600px;
   }
@@ -116,25 +109,24 @@ export const Hero = styled.section`
   h2 {
     margin: 0 1rem;
   }
+  
 
-  & .hero-items {
-    margin: 0;
-    flex-flow: row;
-    gap: 1rem;
-
-    & .hero-item {
-      max-width: 20rem;
-
-    & p {
-      font-size: 1rem;
-    }
-  }
-
-}
 }
 
 @media (min-width: 1440px) {
+  & .hero-items{
+      flex-direction: row;
 
+      & .hero-item{
+        height: 95px;
+
+        #circle {
+          left: -3rem;
+          width: 95px;
+          height: 95px;
+        }
+      }
+    }
 }
 
 `;
