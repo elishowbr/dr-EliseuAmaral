@@ -92,8 +92,7 @@ export function Especialidades() {
             height={294}
           />
           <div id="textCard">
-            {/* TODO: Fazer a feat de que quando clickar em 
-            uma especialidade, Trocar as informaçoes do Card */}
+
             <h3 id="titleCard">{select.name}</h3>
             <p>{select.descricao}</p>
           </div>
