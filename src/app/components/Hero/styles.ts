@@ -43,9 +43,6 @@ export const Hero = styled.section`
     position: absolute;
     transition: background-color 0.3s ease-in-out;
 
-    & svg {
-      fill: ${defaultTheme.white};
-    }
   }
 
     &:hover {
@@ -57,6 +54,10 @@ export const Hero = styled.section`
 
       & #circle {
       background-color: ${defaultTheme.blue_600};
+    }
+
+    & img {
+      fill: ${defaultTheme.blue_400};
     }
   }
 

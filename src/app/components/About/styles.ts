@@ -75,7 +75,7 @@ export const AboutMe = styled.section`
 
     #imgProfile {
       margin-bottom: 0;
-      width: 22rem;
+      width: 24rem;
     }
   }
 
