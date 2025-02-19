@@ -64,8 +64,9 @@ export const AboutMe = styled.section`
     padding: 6rem;
 
     #containerAbout {
-      max-width: 28rem;
+      max-width: 38rem;
       text-align: start;
+      margin-left: 2rem;
 
       & h2 {
         margin-bottom: 1rem;
