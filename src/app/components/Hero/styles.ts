@@ -44,7 +44,7 @@ export const Hero = styled.section`
     transition: background-color 0.3s ease-in-out;
 
     & svg {
-      fill: ${defaultTheme.blue_600};
+      fill: ${defaultTheme.white};
     }
   }
 
@@ -57,12 +57,6 @@ export const Hero = styled.section`
 
       & #circle {
       background-color: ${defaultTheme.blue_600};
-
-        & svg {
-          transition: 0.3s;
-          fill: ${defaultTheme.white};
-        }
-
     }
   }
 

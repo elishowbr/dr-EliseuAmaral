@@ -32,7 +32,7 @@ export function HeroSection() {
           </li>
 
         </ul>
-        
+
     </Hero>
   );
 }
