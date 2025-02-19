@@ -45,8 +45,10 @@ export const ContactSection = styled.section`
     }
   }
 
+
+  /* Revisado! */
   /* Smartphones médios e grandes */
-  @media (min-width: 375px) and (max-width: 767px) {
+  @media (min-width: 375px) {
     margin: 1rem 1rem 4rem;
 
     & h2 {
@@ -64,8 +66,9 @@ export const ContactSection = styled.section`
         aspect-ratio: 1;
     }
   }
+
   /* Tablets e smartphones no modo paisagem */
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) {
     margin: 1rem 2rem 4rem;
   }
 

@@ -6,7 +6,7 @@ export function Rodape() {
         <ul>
           <li>
             <h3>Dr. Eliseu Amaral</h3>
-            <p>CRO-CE 2354</p>
+            <a href="#inicio">CRO-CE 2354</a>
           </li>
 
                 <li>

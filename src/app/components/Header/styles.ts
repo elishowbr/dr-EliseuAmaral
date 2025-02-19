@@ -88,12 +88,7 @@ export const Head = styled.header`
   }
 
   /* Smartphones médios e grandes */
-  @media (min-width: 375px) and (max-width: 767px) {
-    padding: 1.25rem 2rem;
-
-    & .headerInfo > nav {
-      display: none;
-    }
+  @media (min-width: 375px) and (max-width: 768px) {
 
     & #wppContact {
       display: flex;
@@ -110,9 +105,10 @@ export const Head = styled.header`
       }
     }
   }
+/* Revisado! */
 
 /* Smartphones médios e grandes */
-@media (min-width: 375px) and (max-width: 767px){
+@media (min-width: 375px) {
 
   & {
     padding: 1rem 1rem;
@@ -142,7 +138,6 @@ export const Head = styled.header`
     display: none;
   }
   }
-
 }
 
 /* Tablets e smartphones no modo paisagem */
@@ -167,12 +162,6 @@ export const Head = styled.header`
 
     & img {
       display: block;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    & {
-      padding: 2rem 2rem;
     }
 
     & p:first-of-type {
@@ -204,6 +193,7 @@ export const Head = styled.header`
         padding: 0.5 0.75rem;
       }
     }
+
   }
 
 @media (min-width: 1440px) {

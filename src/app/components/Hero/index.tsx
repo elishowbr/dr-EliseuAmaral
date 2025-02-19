@@ -1,13 +1,9 @@
-import Image from "next/image";
 import { Hero } from "./styles";
-import healthIcon from "@/../public/healthCheck.svg";
-import toolsIcon from "@/../public/toolsDentist.svg";
-import handsIcon from "@/../public/CleanerHands.svg";
 
 export function HeroSection() {
   return (
     <Hero>
-        
+
         <h2>Agende sua consulta hoje mesmo e transforme seu sorriso!</h2>
 
         <ul className="hero-items">
@@ -15,26 +11,22 @@ export function HeroSection() {
           <li className="hero-item">
 
             <div id="circle">
-              <Image src={healthIcon} alt="#" width={60} height={60} />
+              <svg id="coracao" xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="#fff" viewBox="0 0 256 256"><path d="M72,144H32a8,8,0,0,1,0-16H67.72l13.62-20.44a8,8,0,0,1,13.32,0l25.34,38,9.34-14A8,8,0,0,1,136,128h24a8,8,0,0,1,0,16H140.28l-13.62,20.44a8,8,0,0,1-13.32,0L88,126.42l-9.34,14A8,8,0,0,1,72,144ZM178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,.75,0,1.5,0,2.25a8,8,0,1,0,16-.5c0-.58,0-1.17,0-1.75A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46c0,53.61-77.76,102.15-96,112.8-10.83-6.31-42.63-26-66.68-52.21a8,8,0,1,0-11.8,10.82c31.17,34,72.93,56.68,74.69,57.63a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40Z"></path></svg>
             </div>
 
-            <p>
-              Cuidado individualizado com foco na confiança e no conforto do paciente.
-            </p>
+            <p>Cuidado individualizado com foco na confiança e no conforto do paciente.</p>
           </li>
 
           <li className="hero-item">
             <div id="circle">
-              <Image src={toolsIcon} alt="#" width={60} height={60} />
+            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="#000000" viewBox="0 0 256 256"><path d="M171,71.42,149.54,80,171,88.57A8,8,0,1,1,165,103.42L128,88.61,91,103.42A8,8,0,1,1,85,88.57L106.46,80,85,71.42A8,8,0,1,1,91,56.57l37,14.81,37-14.81A8,8,0,1,1,171,71.42Zm53,8.33c0,42.72-8,75.4-14.69,95.28-8.73,25.8-20.63,45.49-32.65,54a15.69,15.69,0,0,1-15.95,1.41,16.09,16.09,0,0,1-9.18-13.36C150.68,205.58,146.48,168,128,168s-22.68,37.59-23.53,49.11a16.09,16.09,0,0,1-16,14.9,15.67,15.67,0,0,1-9.13-2.95c-12-8.53-23.92-28.22-32.65-54C40,155.15,32,122.47,32,79.75A56,56,0,0,1,88,24h80A56,56,0,0,1,224,79.75Zm-16,0A40,40,0,0,0,168,40H88A40,40,0,0,0,48,79.76c0,40.55,7.51,71.4,13.85,90.14,11.05,32.66,23,43.37,26.61,46C91.57,174.67,105.59,152,128,152s36.45,22.71,39.49,63.94h0c3.6-2.59,15.57-13.26,26.66-46C200.49,151.16,208,120.31,208,79.76Z"></path></svg>
             </div>
-            <p>
-              Equipamentos de ponta que garantem precisão, conforto e segurança no tratamento.
-            </p>
+            <p>Equipamentos de ponta que garantem precisão, conforto e segurança no tratamento.</p>
           </li>
 
           <li className="hero-item">
             <div id="circle">
-              <Image src={handsIcon} alt="#" width={60} height={60} />
+            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="#000000" viewBox="0 0 256 256"><path d="M216,88H168V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V88H40a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16H88v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V168h48a16,16,0,0,0,16-16V104A16,16,0,0,0,216,88Zm0,64H160a8,8,0,0,0-8,8v56H104V160a8,8,0,0,0-8-8H40V104H96a8,8,0,0,0,8-8V40h48V96a8,8,0,0,0,8,8h56Z"></path></svg>
             </div>
             <p>Padrões de biossegurança para proteger sua saúde.</p>
           </li>

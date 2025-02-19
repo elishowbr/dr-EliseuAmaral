@@ -8,7 +8,6 @@ export const Hero = styled.section`
   justify-content: space-between;
   user-select: none;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3) inset;
-  padding: 1.5rem 4rem;
   background-image: url("images/foto.jpg");
   background-size: cover;
 
@@ -23,11 +22,10 @@ export const Hero = styled.section`
     display: flex;
     justify-content: space-around;
     padding: 0 2rem;
-  }
 
-  & .hero-item {
+    & .hero-item {
     display: flex;
-    background-color: rgba(74, 145, 226, 0.65);
+    background-color: ${defaultTheme.heroCard};
     border-radius: 18px;
     height: 6rem;
     width: 21rem;
@@ -36,28 +34,51 @@ export const Hero = styled.section`
     padding: 0 1rem 0 4rem;
     transition: background-color 0.3s ease-in-out;
 
-    &:hover {
-      background-color: ${defaultTheme.blue_600};
-    }
-
-    & p {
-      color: white;
-      font-size: 1rem;
-    }
-
     & #circle {
     display: flex;
-    width: 95px;
-    height: 95px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    background-color: ${defaultTheme.white};
+    background-color: ${defaultTheme.heroCard};
     position: absolute;
-    left: -2.5rem;
+    transition: background-color 0.3s ease-in-out;
+
+    & svg {
+      fill: ${defaultTheme.blue_600};
+    }
   }
+
+    &:hover {
+      background-color: ${defaultTheme.blue_600};
+
+      p {
+        color: ${defaultTheme.white};
+      }
+
+      & #circle {
+      background-color: ${defaultTheme.blue_600};
+
+        & svg {
+          transition: 0.3s;
+          fill: ${defaultTheme.white};
+        }
+
+    }
+  }
+
+    & p {
+      color: ${defaultTheme.white_200};
+      transition: color 0.3s ease-in-out;
+      font-size: 1rem;
+      margin-left: 2rem;
+    }
+
+}
 }
 
+
+
+/* Revisado! */
 /* Smartphones médios e grandes */
 @media (min-width: 375px) {
   & {
@@ -74,12 +95,16 @@ export const Hero = styled.section`
       margin: 3rem 0;
 
       & .hero-item{
-        height: 75px;
+        height: 80px;
+        width: 26rem;
 
         #circle {
-          left: -1rem;
-          width: 75px;
-          height: 75px;
+          left: 0.5rem;
+
+          svg {
+            width: 75px;
+            height: 75px;
+          }
         }
       }
     }
@@ -91,8 +116,8 @@ export const Hero = styled.section`
 
   & h2 {
     display: block;
-    margin: 2rem 0 0 2rem;
     max-width: 80%;
+    margin-top: 2rem;
   }
 
 
@@ -101,15 +126,32 @@ export const Hero = styled.section`
 @media (min-width: 1024px) {
 
   & {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
     gap: 2rem;
     height: 600px;
   }
 
   h2 {
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
-  
+
+  & .hero-items{
+
+      & .hero-item{
+        height: 95px;
+
+        #circle {
+          left: -2rem;
+          width: 95px;
+          height: 95px;
+        }
+
+        & p {
+        margin-left: 0;
+        }
+      }
+
+    }
 
 }
 
@@ -117,14 +159,8 @@ export const Hero = styled.section`
   & .hero-items{
       flex-direction: row;
 
-      & .hero-item{
-        height: 95px;
-
-        #circle {
-          left: -3rem;
-          width: 95px;
-          height: 95px;
-        }
+      .hero-item {
+        width: 20rem;
       }
     }
 }

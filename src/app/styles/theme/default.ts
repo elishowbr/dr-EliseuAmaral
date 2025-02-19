@@ -5,5 +5,6 @@ export const defaultTheme = {
 
   blue_400 : "#4A90E2",
   blue_600: "#154277",
+  heroCard : "#4a91e2",
 
 } as const;

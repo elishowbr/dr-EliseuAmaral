@@ -5,7 +5,6 @@ export const AboutMe = styled.section`
   display: flex;
   padding-inline: 6rem;
   padding-block: 6rem;
-
   gap: 3rem;
 
   align-items: center;
@@ -34,8 +33,10 @@ export const AboutMe = styled.section`
     }
   }
 
+
+  /* Revisado! */
   /* Smartphones médios e grandes */
-  @media (min-width: 375px) and (max-width: 767px) {
+  @media (min-width: 375px) {
     padding-inline: 2rem;
     flex-direction: column;
     gap: 0;
@@ -50,18 +51,18 @@ export const AboutMe = styled.section`
   }
 
   /* Tablets e smartphones no modo paisagem */
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) {
     padding-inline: 2rem;
 
     & #imgProfile {
-      max-width: 324px;
+      width: 20rem;
     }
   }
 
   @media (min-width: 1024px) {
     flex-direction: row;
-    margin: 0 3rem;
-    
+    padding: 6rem;
+
     #containerAbout {
       max-width: 28rem;
       text-align: start;
@@ -72,17 +73,13 @@ export const AboutMe = styled.section`
     }
 
     #imgProfile {
-      width: 24rem;
-      margin-left: 0.5rem;
+      margin-bottom: 0;
+      width: 22rem;
     }
   }
 
   @media (min-width: 1440px) {
-    /* Refactor: so incrementar mais padding na borda ao inves de adicionar um seletor
-    e colocar margin */
-    
-    padding-inline: 12rem;
-    padding-block: 12rem;
-
+    padding: 8rem 12rem;
   }
+
 `;

@@ -4,7 +4,7 @@ import Logo from "@/../public/LogoHead.png";
 
 export function Header() {
   return (
-    <Head> 
+    <Head id="inicio"> 
       <div className="logo">
         <Image src={Logo} alt="Logo" id="logoIcon" />
         <div className="logoInfo">
