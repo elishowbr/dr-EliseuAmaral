@@ -24,6 +24,7 @@ export const WhatsappButton = styled.a<WhatsappButtonProps>`
     background-color: ${defaultTheme.blue_600};
   }
 `;
+
 export const Head = styled.header`
   display: flex;
   align-items: center;
@@ -35,6 +36,11 @@ export const Head = styled.header`
     display: flex;
     align-items: center;
     gap: 0.75rem;
+
+    #logoIcon {
+      width: 75px;
+      height: 75px;
+    }
 
     & .logoInfo {
 
@@ -88,7 +94,8 @@ export const Head = styled.header`
   }
 
   /* Smartphones médios e grandes */
-  @media (min-width: 375px) and (max-width: 768px) {
+  /* Revisado! */
+  @media ((min-width: 375px) or (max-width: 375px))  and (max-width: 768px) {
 
     & #wppContact {
       display: flex;
@@ -108,7 +115,7 @@ export const Head = styled.header`
 /* Revisado! */
 
 /* Smartphones médios e grandes */
-@media (min-width: 375px) {
+@media (min-width: 375px)  or (max-width: 375px) {
 
   & {
     padding: 1rem 1rem;

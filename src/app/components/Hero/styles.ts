@@ -12,7 +12,7 @@ export const Hero = styled.section`
   background-size: cover;
 
   & h2 {
-    width: 696px;
+    width: 650px;
     font-size: 2.25rem;
     color: ${defaultTheme.blue_600}
   }
@@ -27,7 +27,7 @@ export const Hero = styled.section`
     background-color: ${defaultTheme.heroCard};
     border-radius: 18px;
     height: 6rem;
-    width: 21rem;
+    min-width: 12rem;
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +51,8 @@ export const Hero = styled.section`
 
 /* Revisado! 20/02/2025 */
 /* Smartphones médios e grandes */
-@media (min-width: 375px) {
+/* Adicional dos menores! */
+@media (min-width: 375px) or (max-width: 375px) {
   & {
     padding: 0;
     height: fit-content;
@@ -67,7 +68,8 @@ export const Hero = styled.section`
       padding: 0 1rem;
 
       & .hero-item{
-        height: 6rem;
+        height: fit-content;
+        padding-block: 0.5rem;
         min-width: calc(14rem + 2vw);
 
         & p {
@@ -92,7 +94,7 @@ export const Hero = styled.section`
     margin-left: 1rem;
     & .hero-item{
         height: 90px;
-        min-width: calc(12rem + 25vw);
+        max-width: 24rem;
 
         & p {
         margin-left: 0;

@@ -36,7 +36,7 @@ export const AboutMe = styled.section`
 
   /* Revisado! */
   /* Smartphones médios e grandes */
-  @media (min-width: 375px) {
+  @media (min-width: 375px) or (max-width: 375px) {
     padding-inline: 2rem;
     flex-direction: column;
     gap: 0;

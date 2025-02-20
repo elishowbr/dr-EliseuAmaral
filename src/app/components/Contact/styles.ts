@@ -48,7 +48,7 @@ export const ContactSection = styled.section`
 
   /* Revisado! */
   /* Smartphones médios e grandes */
-  @media (min-width: 375px) {
+  @media (min-width: 375px) or (max-width: 375px) {
     margin: 1rem 1rem 4rem;
 
     & h2 {

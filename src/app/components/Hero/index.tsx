@@ -15,7 +15,6 @@ export function HeroSection() {
 
           <li className="hero-item">
             <Image src={dentist} width={75} height={75} alt="Logo" id="logoIcon" />
-
             <p>Cuidado individualizado com foco na confiança e no conforto do paciente.</p>
           </li>
 
