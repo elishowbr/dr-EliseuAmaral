@@ -12,7 +12,6 @@ export const Hero = styled.section`
   background-size: cover;
 
   & h2 {
-    margin-left: 2rem;
     width: 696px;
     font-size: 2.25rem;
     color: ${defaultTheme.blue_600}
@@ -29,36 +28,14 @@ export const Hero = styled.section`
     border-radius: 18px;
     height: 6rem;
     width: 21rem;
+    gap: 1rem;
     align-items: center;
-    position: relative;
-    padding: 0 1rem 0 4rem;
+    justify-content: space-between;
     transition: background-color 0.3s ease-in-out;
-
-    & #circle {
-    display: flex;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    background-color: ${defaultTheme.heroCard};
-    position: absolute;
-    transition: background-color 0.3s ease-in-out;
-
-  }
+    padding: 0 1rem;
 
     &:hover {
       background-color: ${defaultTheme.blue_600};
-
-      p {
-        color: ${defaultTheme.white};
-      }
-
-      & #circle {
-      background-color: ${defaultTheme.blue_600};
-    }
-
-    & img {
-      fill: ${defaultTheme.blue_400};
-    }
   }
 
     & p {
@@ -67,13 +44,12 @@ export const Hero = styled.section`
       font-size: 1rem;
       margin-left: 2rem;
     }
-
 }
 }
 
 
 
-/* Revisado! */
+/* Revisado! 20/02/2025 */
 /* Smartphones médios e grandes */
 @media (min-width: 375px) {
   & {
@@ -88,18 +64,14 @@ export const Hero = styled.section`
       flex-direction: column;
       gap: 2rem;
       margin: 3rem 0;
+      padding: 0 1rem;
 
       & .hero-item{
-        height: 80px;
-        width: 26rem;
+        height: 6rem;
+        min-width: calc(14rem + 2vw);
 
-        #circle {
-          left: 0.5rem;
-
-          svg {
-            width: 75px;
-            height: 75px;
-          }
+        & p {
+        margin-left: 0;
         }
       }
     }
@@ -112,10 +84,21 @@ export const Hero = styled.section`
   & h2 {
     display: block;
     max-width: 80%;
+    margin: 0 2rem;
     margin-top: 2rem;
   }
 
+  & .hero-items {
+    margin-left: 1rem;
+    & .hero-item{
+        height: 90px;
+        min-width: calc(12rem + 25vw);
 
+        & p {
+        margin-left: 0;
+        }
+      }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -127,37 +110,33 @@ export const Hero = styled.section`
   }
 
   h2 {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 
   & .hero-items{
+    margin-left: 0rem;
 
       & .hero-item{
-        height: 95px;
-
-        #circle {
-          left: -2rem;
-          width: 95px;
-          height: 95px;
-        }
-
-        & p {
-        margin-left: 0;
-        }
+        min-width: 26rem;
       }
-
     }
 
 }
 
 @media (min-width: 1440px) {
+
+  
+  h2 {
+    margin: 0 2rem;
+  }
+
   & .hero-items{
       flex-direction: row;
 
       .hero-item {
-        width: 20rem;
+        padding: 0 1rem;
+        min-width: 24rem;
       }
     }
 }
-
 `;

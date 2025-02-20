@@ -17,7 +17,7 @@ export default function Home() {
         <GlobalStyle />
         <Header /> 
         <HeroSection/>
-        <Especialidades/>
+        {/* <Especialidades/> */}
         <About/>
         <Contact/>
         <Rodape />

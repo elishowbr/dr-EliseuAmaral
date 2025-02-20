@@ -22,7 +22,7 @@ export const Main = styled.main`
   & .card {
     background-color: ${defaultTheme.white};
     max-width: 38rem;
-    height: fit-content;
+    height: 95%;
     align-self: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
