@@ -7,10 +7,9 @@ export const Hero = styled.section`
   flex-flow: column;
   justify-content: space-between;
   user-select: none;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3) inset;
   background-image: url("images/foto.jpg");
   background-size: cover;
-
+  
   & h2 {
     width: 650px;
     font-size: 2.25rem;

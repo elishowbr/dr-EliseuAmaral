@@ -28,9 +28,12 @@ export const WhatsappButton = styled.a<WhatsappButtonProps>`
 export const Head = styled.header`
   display: flex;
   align-items: center;
-  padding: 1.25rem 4rem;
   justify-content: space-between;
   user-select: none;
+  position: sticky;
+  top: 0;
+  background-color: ${defaultTheme.white_200};
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 
   & .logo {
     display: flex;
