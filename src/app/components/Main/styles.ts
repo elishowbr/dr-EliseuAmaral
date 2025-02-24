@@ -2,8 +2,6 @@ import { defaultTheme } from "@/app/styles/theme/default";
 import { styled } from "styled-components";
 
 export const Main = styled.main`
-  margin-inline: 12rem;
-  margin-block: 3rem;
 
   & h2 {
     font-size: 2.5rem;
@@ -16,7 +14,6 @@ export const Main = styled.main`
   & .servicos {
     display: flex;
     justify-content: space-between;
-    height: 33rem;
   }
 
   & .card {
@@ -55,6 +52,7 @@ export const Main = styled.main`
     flex-flow: column;
     justify-content: space-between;
     user-select: none;
+    width: fit-content;
 
     & .specialtyitem {
       display: flex;
@@ -86,82 +84,123 @@ export const Main = styled.main`
     }
   }
 
+  /* Revisado! 24/02/25 */
   /* Smartphones médios e grandes */
-  @media (min-width: 375px) and (max-width: 767px) {
-  }
-
-  /* Tablets e smartphones no modo paisagem */
-  @media (min-width: 768px) and (max-width: 1023px) {
-    margin-inline: 6rem;
-
-    .servicos {
-      flex-flow: column-reverse;
-      align-items: center;
-      height: 38rem;
-      gap: 3rem;
-    }
-
-    & .specialtys {
-      display: grid;
-      grid-template-columns: repeat(6, 75px);
-      gap: 50px;
-      height: min-content;
-
-      & .specialtyitem {
-        padding: 0.5rem;
-        width: 75px;
-        height: fit-content;
-        justify-content: center;
-        align-items: center;
-
-        h4 {
-          display: none;
-        }
-
-        &:focus {
-          margin-left: 0rem;
-        }
-      }
-    }
-
-  }
-  @media (min-width: 1024px) and (max-width: 1439px) {
-    margin-inline: 6rem;
+  @media (min-width: 375px) or (max-width: 375px) {
+    padding: 3rem 0;
 
     h2 {
       text-align: center;
     }
+
     .servicos {
-      flex-flow: column-reverse;
-      align-items: center;
-      height: 46rem;
-      gap: 3rem;
+      flex-direction: column-reverse;
     }
 
     .specialtys {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 1rem;
+      grid-gap: 1rem 3rem;
+      align-self: center;
 
       .specialtyitem {
-        width: 16rem;
-        transition: transform 0.3s;
+        width: fit-content;
+        padding: 1rem;
+        justify-self: center;
 
         &:focus {
-          box-shadow: 0 0 0 2px ${defaultTheme.blue_400};
-          background-color: ${defaultTheme.blue_600};
-          color: ${defaultTheme.white};
-          margin-left: 0;
-          transform: scale(1.02);
+        margin-left: 0rem;
+      }
+        h4 {
+          display: none;
+        }
+      }
+    }
+
+
+    .card {
+      width: 95%;
+      margin-bottom: 2rem;
+      height: 36rem;
+
+      h3, p {
+        line-height: 1.2;
+      }
+    }
+  }
+
+  /* Tablets e smartphones no modo paisagem */
+  @media (min-width: 768px) {
+    .card {
+      max-width: 32rem;
+      margin-bottom: 2rem;
+      height: 33rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 4rem 6rem;
+
+    h2 {
+      text-align: start;
+    }
+
+    .servicos {
+      flex-direction: row;
+    }
+
+    .specialtys {
+      margin-right: 0rem;
+      display: flex;
+      
+      .specialtyitem{
+        width: 24rem;
+
+      h4 {
+        display: block;
+      }
+
+      &:focus {
+        margin-left: 0rem;
+      }
+    }
+    }      
+
+    .card {
+      max-width: 38rem;
+      margin-bottom: 0;
+      margin-left: 2rem;
+
+      h3, p{
+        line-height: 1.2;
+      }
+
+    }
+  }
+
+  @media (min-width: 1440px) {
+
+    h2 {
+      margin-left: 6rem;
+    }
+
+    .servicos {
+      margin: 0 6rem;
+
+      .specialtys {
+        .specialtyitem {
+          &:focus {
+            margin-left: 2rem;
+          }
         }
       }
     }
 
     .card {
-      max-width: 30rem;
+      width: 38rem;
+      h3, p{
+        line-height: 1.4;
+      }
     }
-  }
-
-  @media (min-width: 1440px) {
   }
 `;

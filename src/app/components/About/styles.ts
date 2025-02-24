@@ -13,7 +13,7 @@ export const AboutMe = styled.section`
   & #imgProfile {
     height: 100%;
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -55,7 +55,7 @@ export const AboutMe = styled.section`
     padding-inline: 2rem;
 
     & #imgProfile {
-      width: 20rem;
+      width: 32rem;
     }
   }
 

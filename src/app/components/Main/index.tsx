@@ -10,7 +10,7 @@ const especialidades = [
     alt: "Implantodontia",
     exampleImg : "/images/implantodontia-1.jpg",
     descricao:
-      "A implantodontia é a especialidade responsável pela reabilitação de pacientes que perderam um ou mais dentes, utilizando implantes dentários. O implante é um pequeno parafuso de titânio fixado no osso da mandíbula ou maxila, substituindo a raiz do dente perdido. Sobre ele, é colocada uma coroa protética que imita um dente natural.",
+      "A implantodontia é a especialidade responsável pela reabilitação de pacientes que perderam um ou mais dentes, utilizando pequenos parafusos de titânio fixados no osso da mandíbula ou maxila, substituindo a raiz do dente perdido, e sobre ele é colocada uma coroa protética que imita um dente natural.",
   },
   {
     id : "reabilitacao",
